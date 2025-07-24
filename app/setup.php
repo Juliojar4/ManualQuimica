@@ -162,3 +162,7 @@ add_action('init', function () {
     $blockManager = new BlockManager();
     $blockManager->register();
 });
+
+add_filter('woocommerce_min_password_strength', function () {
+    return 0; // 0 = nenhuma exigência de força
+});
