@@ -1,3 +1,5 @@
-@import "tailwindcss" theme(static);
-@source "../views/";
-@source "../../app/";
+@import "tailwindcss";
+@import "./tailwind.conf.css";
+@import "./sections/header.css";
+@import "./woocomerc/my-acconunt.css";
+@import "./woocomerc/account.css";
