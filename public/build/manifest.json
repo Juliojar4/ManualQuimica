@@ -9,7 +9,7 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-BXdneGzo.css",
+    "file": "assets/app-7fEU0fI5.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -19,12 +19,12 @@
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-iLs4-jxO.css",
+    "file": "assets/editor-B-gbszck.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BFbL5_ji.js",
+    "file": "assets/app-CclxLpA6.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -32,7 +32,7 @@
       "resources/js/blocks.js"
     ],
     "css": [
-      "assets/app-BXdneGzo.css",
+      "assets/app-7fEU0fI5.css",
       "assets/blocks-DUf_qGu0.css"
     ]
   },
@@ -46,7 +46,7 @@
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-ypFntHdT.js",
+    "file": "assets/editor-Bc_a2CVk.js",
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true,
@@ -54,7 +54,7 @@
       "resources/js/blocks.js"
     ],
     "css": [
-      "assets/editor-iLs4-jxO.css",
+      "assets/editor-B-gbszck.css",
       "assets/blocks-DUf_qGu0.css"
     ]
   }
