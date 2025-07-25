@@ -18,6 +18,7 @@ class BlockManager
         // Add new blocks here - just the folder name!
         // Example: 'my-block', 'text-block', 'hero-section'
             'block-name',
+            'hero',
     ];
 
     /**

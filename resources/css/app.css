@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @import "./tailwind.conf.css";
+
 @import "./sections/header.css";
+
+@import "./global/typograph.css";
+
 @import "./woocomerc/my-acconunt.css";
 @import "./woocomerc/account.css";

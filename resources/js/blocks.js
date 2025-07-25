@@ -15,6 +15,7 @@ import '../css/blocks.css';
 // import '../blocks/my-block/block.jsx';
 
 // AUTO-IMPORTS: Created blocks are automatically imported below this line
+import '../blocks/hero/block.jsx';
 import '../blocks/block-name/block.jsx';
 
 console.log('🎨 Auto Blocks - System loaded!');
