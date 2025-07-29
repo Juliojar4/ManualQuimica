@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "./tailwind.conf.css";
+
+/* AOS Animation Library */
+@import "aos/dist/aos.css";
+
+@import "./sections/header.css";
+
+@import "./global/typograph.css";
+
+@import "./woocomerc/my-acconunt.css";
+@import "./woocomerc/account.css";
+
+

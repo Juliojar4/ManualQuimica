@@ -1,0 +1,33 @@
+{
+    "name": "doctailwind/hero",
+    "title": "Hero",
+    "category": "design",
+    "icon": "block-default",
+    "description": "Custom Hero block with title, description and image",
+    "textdomain": "doctailwind",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Hero Title"
+        },
+        "description": {
+            "type": "string",
+            "default": "Your hero description goes here..."
+        },
+        "imageId": {
+            "type": "number",
+            "default": 0
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php"
+}

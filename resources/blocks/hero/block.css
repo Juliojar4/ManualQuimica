@@ -1,0 +1,180 @@
+.elegant-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: elegantFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes elegantFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito elegante de texto - removendo gradiente para manter cores originais */
+.elegant-text {
+  text-shadow: 
+    0 2px 4px rgba(0,0,0,0.15),
+    0 0 15px rgba(255,255,255,0.08);
+  letter-spacing: 0.02em;
+}
+
+/* Espaços entre palavras */
+.word-space {
+  display: inline-block;
+  width: 0.3em;
+}
+
+/* Removendo efeito de gradiente para manter cores naturais */
+.title-natural {
+  color: inherit;
+}
+
+/* Animação de bolhas químicas para o botão - Versão Ultra Suave */
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  bottom: -10px;
+  transform: translateX(0) scale(0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estado base - bolhas invisíveis */
+.group .bubble {
+  animation: none;
+  opacity: 0;
+  bottom: -15px;
+  transform: translateX(0) scale(0.2);
+}
+
+/* Quando em hover - inicia animação suavemente */
+.group:hover .bubble {
+  animation: bubbleUpSmooth 1.4s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.6s ease-out;
+}
+
+/* Delays para entrada suave */
+.group:hover .bubble-1 { animation-delay: 0s; }
+.group:hover .bubble-2 { animation-delay: 0.15s; }
+.group:hover .bubble-3 { animation-delay: 0.3s; }
+.group:hover .bubble-4 { animation-delay: 0.45s; }
+.group:hover .bubble-5 { animation-delay: 0.6s; }
+
+/* Saída ultra suave - transition longo */
+.group:not(:hover) .bubble {
+  animation: bubbleGentleExit 2.5s ease-out forwards;
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Delays escalonados para saída natural */
+.group:not(:hover) .bubble-1 { animation-delay: 0s; }
+.group:not(:hover) .bubble-2 { animation-delay: 0.2s; }
+.group:not(:hover) .bubble-3 { animation-delay: 0.4s; }
+.group:not(:hover) .bubble-4 { animation-delay: 0.6s; }
+.group:not(:hover) .bubble-5 { animation-delay: 0.8s; }
+
+.bubble-1 {
+  width: 8px;
+  height: 8px;
+  left: 15%;
+}
+
+.bubble-2 {
+  width: 6px;
+  height: 6px;
+  left: 35%;
+}
+
+.bubble-3 {
+  width: 10px;
+  height: 10px;
+  left: 55%;
+}
+
+.bubble-4 {
+  width: 7px;
+  height: 7px;
+  left: 75%;
+}
+
+.bubble-5 {
+  width: 5px;
+  height: 5px;
+  left: 85%;
+}
+
+/* Animação principal mais suave */
+@keyframes bubbleUpSmooth {
+  0% {
+    bottom: -10px;
+    opacity: 0;
+    transform: translateX(0) scale(0.2);
+  }
+  10% {
+    opacity: 0.3;
+    transform: translateX(1px) scale(0.4);
+  }
+  25% {
+    opacity: 0.8;
+    transform: translateX(3px) scale(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(6px) scale(1);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translateX(2px) scale(0.9);
+  }
+  90% {
+    opacity: 0.4;
+    transform: translateX(8px) scale(0.6);
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+    transform: translateX(12px) scale(0.1);
+  }
+}
+
+/* Animação de saída ultra suave */
+@keyframes bubbleGentleExit {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0) scale(0.8);
+  }
+  15% {
+    opacity: 0.7;
+    transform: translateX(2px) scale(0.9);
+  }
+  35% {
+    opacity: 0.8;
+    transform: translateX(8px) scale(1);
+  }
+  60% {
+    opacity: 0.6;
+    transform: translateX(15px) scale(0.9);
+  }
+  80% {
+    opacity: 0.3;
+    transform: translateX(20px) scale(0.6);
+  }
+  95% {
+    opacity: 0.1;
+    transform: translateX(25px) scale(0.3);
+  }
+  100% {
+    bottom: 110%;
+    opacity: 0;
+    transform: translateX(30px) scale(0.1);
+  }
+}
