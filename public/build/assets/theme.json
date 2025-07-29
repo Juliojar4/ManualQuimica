@@ -1,0 +1,185 @@
+{
+  "__processed__": "This file was generated using Vite",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "layout": {
+      "contentSize": "48rem"
+    },
+    "background": {
+      "backgroundImage": true
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "name": "Red (50)",
+          "slug": "red-50",
+          "color": "oklch(97.1% .013 17.38)"
+        },
+        {
+          "name": "Red (400)",
+          "slug": "red-400",
+          "color": "oklch(70.4% .191 22.216)"
+        },
+        {
+          "name": "Yellow (50)",
+          "slug": "yellow-50",
+          "color": "oklch(98.7% .026 102.212)"
+        },
+        {
+          "name": "Yellow (400)",
+          "slug": "yellow-400",
+          "color": "oklch(85.2% .199 91.936)"
+        },
+        {
+          "name": "Green (50)",
+          "slug": "green-50",
+          "color": "oklch(98.2% .018 155.826)"
+        },
+        {
+          "name": "Green (400)",
+          "slug": "green-400",
+          "color": "#49dcb1"
+        },
+        {
+          "name": "Green (700)",
+          "slug": "green-700",
+          "color": "#1e5040"
+        },
+        {
+          "name": "Teal (500)",
+          "slug": "teal-500",
+          "color": "oklch(70.4% .14 182.503)"
+        },
+        {
+          "name": "Teal (600)",
+          "slug": "teal-600",
+          "color": "oklch(60% .118 184.704)"
+        },
+        {
+          "name": "Cyan (600)",
+          "slug": "cyan-600",
+          "color": "oklch(60.9% .126 221.723)"
+        },
+        {
+          "name": "Cyan (700)",
+          "slug": "cyan-700",
+          "color": "oklch(52% .105 223.128)"
+        },
+        {
+          "name": "Blue (300)",
+          "slug": "blue-300",
+          "color": "#d2e5f0"
+        },
+        {
+          "name": "Indigo (50)",
+          "slug": "indigo-50",
+          "color": "oklch(96.2% .018 272.314)"
+        },
+        {
+          "name": "Indigo (400)",
+          "slug": "indigo-400",
+          "color": "oklch(67.3% .182 276.935)"
+        },
+        {
+          "name": "Gray (300)",
+          "slug": "gray-300",
+          "color": "#f5f9fb"
+        },
+        {
+          "name": "Gray (700)",
+          "slug": "gray-700",
+          "color": "oklch(37.3% .034 259.733)"
+        },
+        {
+          "name": "Gray (800)",
+          "slug": "gray-800",
+          "color": "oklch(27.8% .033 256.848)"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#fff"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "name": "sans",
+          "slug": "sans",
+          "fontFamily": "ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji"
+        },
+        {
+          "name": "mono",
+          "slug": "mono",
+          "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "xs",
+          "slug": "xs",
+          "size": ".75rem"
+        },
+        {
+          "name": "sm",
+          "slug": "sm",
+          "size": ".875rem"
+        },
+        {
+          "name": "lg",
+          "slug": "lg",
+          "size": "1.125rem"
+        },
+        {
+          "name": "xl",
+          "slug": "xl",
+          "size": "1.25rem"
+        },
+        {
+          "name": "2xl",
+          "slug": "2xl",
+          "size": "1.5rem"
+        },
+        {
+          "name": "4xl",
+          "slug": "4xl",
+          "size": "2.25rem"
+        },
+        {
+          "name": "5xl",
+          "slug": "5xl",
+          "size": "3rem"
+        }
+      ]
+    }
+  }
+}
