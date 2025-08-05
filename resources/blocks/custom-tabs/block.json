@@ -1,0 +1,39 @@
+{
+    "name": "doctailwind/custom-tabs",
+    "title": "Acordeão com Imagens",
+    "category": "design",
+    "icon": "list-view",
+    "description": "Acordeão interativo à esquerda com imagem dinâmica à direita",
+    "textdomain": "doctailwind",
+    "attributes": {
+        "accordionItems": {
+            "type": "array",
+            "default": [
+                {
+                    "title": "Primeira Seção",
+                    "content": "Conteúdo da primeira seção do acordeão...",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                },
+                {
+                    "title": "Segunda Seção",
+                    "content": "Conteúdo da segunda seção do acordeão...",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                },
+                {
+                    "title": "Terceira Seção",
+                    "content": "Conteúdo da terceira seção do acordeão...",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                }
+            ]
+        }
+    },
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php"
+}

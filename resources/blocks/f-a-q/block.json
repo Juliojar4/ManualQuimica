@@ -1,0 +1,11 @@
+{
+    "name": "doctailwind/f-a-q",
+    "title": "Faq",
+    "category": "design",
+    "icon": "block-default",
+    "description": "Custom Faq block",
+    "textdomain": "doctailwind",
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php"
+}

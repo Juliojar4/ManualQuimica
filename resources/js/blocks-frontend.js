@@ -8,12 +8,12 @@
  * é seguro para usar no frontend.
  */
 
-// Scripts de frontend para blocos específicos
-// Exemplo: funcionalidades interativas, animações, etc.
+// Import accordion tabs functionality
+import './accordion-tabs';
 
 console.log('🎨 Block Frontend Scripts - Loaded!');
 
-// Exemplo de como adicionar interatividade aos blocos:
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Código para interação com blocos no frontend
-// });
+// Scripts de frontend para blocos específicos
+// Hero block - Animações das bolhas já estão no CSS
+// Grid Information - Estático, não necessita JS
+// Custom Tabs/Accordion - Funcionalidade importada acima

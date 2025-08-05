@@ -1,0 +1,11 @@
+{
+    "name": "doctailwind/scroll-component",
+    "title": "Scroll Component",
+    "category": "design",
+    "icon": "block-default",
+    "description": "Custom Scroll Component block",
+    "textdomain": "doctailwind",
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php"
+}

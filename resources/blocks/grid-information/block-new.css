@@ -1,0 +1,43 @@
+/* Grid Information Block Styles */
+.grid-information-block {
+    position: relative;
+}
+
+/* Card hover effects */
+.grid-information-block .group:hover {
+    transform: translateY(-2px);
+}
+
+/* Smooth transitions for all elements */
+.grid-information-block img,
+.grid-information-block h3,
+.grid-information-block p {
+    transition: all 0.3s ease-out;
+}
+
+/* Custom scrollbar for very long content */
+.grid-information-block p {
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+    .grid-information-block {
+        padding: 1rem;
+    }
+    
+    .grid-information-block .gap-8 {
+        gap: 1.5rem;
+    }
+}
+
+/* Editor Styles */
+.grid-information-block-editor {
+    background: #f9fafb;
+    border: 2px dashed #d1d5db !important;
+}
+
+.grid-information-block-editor:hover {
+    border-color: #3b82f6 !important;
+}

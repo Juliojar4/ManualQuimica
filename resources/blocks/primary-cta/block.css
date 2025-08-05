@@ -1,0 +1,94 @@
+/* ============================
+   PRIMARY CTA BLOCK
+   ============================ */
+
+.primary-cta-block {
+    position: relative;
+    overflow: hidden;
+}
+
+/* CTA Button Hover Effects */
+.primary-cta-block a {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-cta-block a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.primary-cta-block a:hover::before {
+    left: 100%;
+}
+
+/* Image Hover Effects */
+.primary-cta-block img {
+    transition: transform 0.5s ease;
+}
+
+.primary-cta-block .hover\:scale-105:hover img {
+    transform: scale(1.05);
+}
+
+/* Button Pulse Animation */
+@keyframes pulse-green {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+    }
+}
+
+.primary-cta-block a:hover {
+    animation: pulse-green 1.5s infinite;
+}
+
+/* Badge Animation */
+.primary-cta-block .absolute {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Editor Styles */
+.primary-cta-block-editor {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 2px dashed #22c55e !important;
+}
+
+.primary-cta-block-editor:hover {
+    border-color: #16a34a !important;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .primary-cta-block .grid {
+        gap: 2rem;
+    }
+    
+    .primary-cta-block h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
+
+.primary-cta-block-editor:hover {
+    border-color: #3b82f6 !important;
+}

@@ -3,6 +3,21 @@
     "file": "assets/editor.deps-CXX3P9b5.json",
     "src": "editor.deps.json"
   },
+  "resources/blocks/custom-tabs/block.css": {
+    "file": "assets/block-63jNljK7.css",
+    "src": "resources/blocks/custom-tabs/block.css",
+    "isEntry": true
+  },
+  "resources/blocks/f-a-q/block.css": {
+    "file": "assets/block-QTWTmr2Q.css",
+    "src": "resources/blocks/f-a-q/block.css",
+    "isEntry": true
+  },
+  "resources/blocks/grid-information/block.css": {
+    "file": "assets/block-CoAjPZpZ.css",
+    "src": "resources/blocks/grid-information/block.css",
+    "isEntry": true
+  },
   "resources/blocks/hero/block.css": {
     "file": "assets/block-BvpBjQ51.css",
     "src": "resources/blocks/hero/block.css",
@@ -14,8 +29,18 @@
     "src": "resources/blocks/hero/block.js",
     "isEntry": true
   },
+  "resources/blocks/primary-cta/block.css": {
+    "file": "assets/block-SdEZsYAp.css",
+    "src": "resources/blocks/primary-cta/block.css",
+    "isEntry": true
+  },
+  "resources/blocks/scroll-component/block.css": {
+    "file": "assets/block-BzBd3kUg.css",
+    "src": "resources/blocks/scroll-component/block.css",
+    "isEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-BoLWg0Oy.css",
+    "file": "assets/app-BJJ_IzY8.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -25,42 +50,38 @@
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-CidQUDKV.css",
+    "file": "assets/editor-Dj9NcDdV.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BtSHWzMD.js",
+    "file": "assets/app-DI-oPTeQ.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-BoLWg0Oy.css"
+      "assets/app-BJJ_IzY8.css"
     ]
   },
   "resources/js/blocks.js": {
-    "file": "assets/blocks-CwuAicHy.js",
+    "file": "assets/blocks-BXxyVw6-.js",
     "name": "blocks",
     "src": "resources/js/blocks.js",
     "isEntry": true,
-    "imports": [
-      "resources/blocks/hero/block.js"
-    ],
     "css": [
       "assets/blocks-DUf_qGu0.css"
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-DCIkDXUN.js",
+    "file": "assets/editor-BoOx1Jtl.js",
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true,
     "imports": [
-      "resources/js/blocks.js",
-      "resources/blocks/hero/block.js"
+      "resources/js/blocks.js"
     ],
     "css": [
-      "assets/editor-CidQUDKV.css",
+      "assets/editor-Dj9NcDdV.css",
       "assets/blocks-DUf_qGu0.css"
     ]
   }

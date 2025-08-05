@@ -29,6 +29,11 @@
           "color": "oklch(70.4% .191 22.216)"
         },
         {
+          "name": "Red (500)",
+          "slug": "red-500",
+          "color": "oklch(63.7% .237 25.331)"
+        },
+        {
           "name": "Yellow (50)",
           "slug": "yellow-50",
           "color": "oklch(98.7% .026 102.212)"
@@ -49,9 +54,44 @@
           "color": "#49dcb1"
         },
         {
+          "name": "Green (600)",
+          "slug": "green-600",
+          "color": "#157a63"
+        },
+        {
           "name": "Green (700)",
           "slug": "green-700",
           "color": "#1e5040"
+        },
+        {
+          "name": "Emerald (50)",
+          "slug": "emerald-50",
+          "color": "oklch(97.9% .021 166.113)"
+        },
+        {
+          "name": "Emerald (100)",
+          "slug": "emerald-100",
+          "color": "oklch(95% .052 163.051)"
+        },
+        {
+          "name": "Emerald (400)",
+          "slug": "emerald-400",
+          "color": "oklch(76.5% .177 163.223)"
+        },
+        {
+          "name": "Teal (50)",
+          "slug": "teal-50",
+          "color": "oklch(98.4% .014 180.72)"
+        },
+        {
+          "name": "Teal (100)",
+          "slug": "teal-100",
+          "color": "oklch(95.3% .051 180.801)"
+        },
+        {
+          "name": "Teal (400)",
+          "slug": "teal-400",
+          "color": "oklch(77.7% .152 181.912)"
         },
         {
           "name": "Teal (500)",
@@ -62,6 +102,26 @@
           "name": "Teal (600)",
           "slug": "teal-600",
           "color": "oklch(60% .118 184.704)"
+        },
+        {
+          "name": "Teal (700)",
+          "slug": "teal-700",
+          "color": "oklch(51.1% .096 186.391)"
+        },
+        {
+          "name": "Cyan (50)",
+          "slug": "cyan-50",
+          "color": "oklch(98.4% .019 200.873)"
+        },
+        {
+          "name": "Cyan (100)",
+          "slug": "cyan-100",
+          "color": "oklch(95.6% .045 203.388)"
+        },
+        {
+          "name": "Cyan (500)",
+          "slug": "cyan-500",
+          "color": "oklch(71.5% .143 215.221)"
         },
         {
           "name": "Cyan (600)",
@@ -89,9 +149,59 @@
           "color": "oklch(67.3% .182 276.935)"
         },
         {
+          "name": "Slate (600)",
+          "slug": "slate-600",
+          "color": "oklch(44.6% .043 257.281)"
+        },
+        {
+          "name": "Slate (700)",
+          "slug": "slate-700",
+          "color": "oklch(37.2% .044 257.287)"
+        },
+        {
+          "name": "Slate (800)",
+          "slug": "slate-800",
+          "color": "oklch(27.9% .041 260.031)"
+        },
+        {
+          "name": "Slate (900)",
+          "slug": "slate-900",
+          "color": "oklch(20.8% .042 265.755)"
+        },
+        {
+          "name": "Gray (50)",
+          "slug": "gray-50",
+          "color": "oklch(98.5% .002 247.839)"
+        },
+        {
+          "name": "Gray (100)",
+          "slug": "gray-100",
+          "color": "oklch(96.7% .003 264.542)"
+        },
+        {
+          "name": "Gray (200)",
+          "slug": "gray-200",
+          "color": "oklch(92.8% .006 264.531)"
+        },
+        {
           "name": "Gray (300)",
           "slug": "gray-300",
           "color": "#f5f9fb"
+        },
+        {
+          "name": "Gray (400)",
+          "slug": "gray-400",
+          "color": "#4f6a77"
+        },
+        {
+          "name": "Gray (500)",
+          "slug": "gray-500",
+          "color": "#9eb4c1"
+        },
+        {
+          "name": "Gray (600)",
+          "slug": "gray-600",
+          "color": "#1e2d36"
         },
         {
           "name": "Gray (700)",
@@ -102,6 +212,16 @@
           "name": "Gray (800)",
           "slug": "gray-800",
           "color": "oklch(27.8% .033 256.848)"
+        },
+        {
+          "name": "Gray (900)",
+          "slug": "gray-900",
+          "color": "oklch(21% .034 264.665)"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#000"
         },
         {
           "name": "White",
@@ -178,6 +298,11 @@
           "name": "5xl",
           "slug": "5xl",
           "size": "3rem"
+        },
+        {
+          "name": "6xl",
+          "slug": "6xl",
+          "size": "3.75rem"
         }
       ]
     }

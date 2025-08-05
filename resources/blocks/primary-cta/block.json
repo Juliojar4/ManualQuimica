@@ -1,0 +1,37 @@
+{
+    "name": "doctailwind/primary-cta",
+    "title": "CTA para Checkout",
+    "category": "design",
+    "icon": "cart",
+    "description": "Bloco CTA que redireciona para checkout do WooCommerce",
+    "textdomain": "doctailwind",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Compre Agora!"
+        },
+        "subtitle": {
+            "type": "string", 
+            "default": "Adquira nosso produto especial com desconto exclusivo"
+        },
+        "imageId": {
+            "type": "number",
+            "default": 0
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": ""
+        },
+        "productId": {
+            "type": "number",
+            "default": 61
+        }
+    },
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php"
+}

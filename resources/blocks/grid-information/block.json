@@ -1,0 +1,46 @@
+{
+    "name": "doctailwind/grid-information",
+    "title": "Grid Information",
+    "category": "design",
+    "icon": "grid-view",
+    "description": "Grid of 3 cards with image, title and subtitle",
+    "textdomain": "doctailwind",
+    "attributes": {
+        "cards": {
+            "type": "array",
+            "default": [
+                {
+                    "title": "Card 1",
+                    "subtitle": "Subtitle for card 1",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                },
+                {
+                    "title": "Card 2",
+                    "subtitle": "Subtitle for card 2",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                },
+                {
+                    "title": "Card 3",
+                    "subtitle": "Subtitle for card 3",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                },
+                {
+                    "title": "Card 4",
+                    "subtitle": "Subtitle for card 4",
+                    "imageId": 0,
+                    "imageUrl": "",
+                    "imageAlt": ""
+                }
+            ]
+        }
+    },
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php"
+}
