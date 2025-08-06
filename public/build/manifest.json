@@ -45,7 +45,7 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-DBf05owP.css",
+    "file": "assets/app-CwO4r_aH.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -60,13 +60,13 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-mhnmrj9f.js",
+    "file": "assets/app-DKf1NdkH.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
       "assets/app-D7wrQ6zr.css",
-      "assets/app-DBf05owP.css"
+      "assets/app-CwO4r_aH.css"
     ]
   },
   "resources/js/blocks.js": {

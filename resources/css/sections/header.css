@@ -7,7 +7,16 @@
    ========================================================================== */
 
 /* Header body padding */
- 
+body {
+    padding-top: 4rem; /* h-16 */
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding-top: 5rem; /* h-20 */
+    }
+}
+
 /* Custom logo sizing */
 #main-header .custom-logo-link img {
     max-height: 40px;
