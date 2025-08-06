@@ -1,5 +1,6 @@
 [
   "wp-blocks",
   "wp-block-editor",
-  "wp-components"
+  "wp-components",
+  "wp-i18n"
 ]

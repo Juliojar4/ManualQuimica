@@ -1,0 +1,17 @@
+{
+    "name": "doctailwind/testemunhos",
+    "title": "Testemunhos",
+    "category": "design",
+    "icon": "star-filled",
+    "description": "Bloco de testemunhos com slider interativo",
+    "textdomain": "doctailwind",
+    "editorScript": "file:./block.jsx",
+    "style": "file:./block.css",
+    "render": "file:./block.php",
+    "attributes": {
+        "testimonials": {
+            "type": "array",
+            "default": []
+        }
+    }
+}

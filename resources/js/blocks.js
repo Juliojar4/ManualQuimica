@@ -1,3 +1,4 @@
+import '../blocks/testemunhos/block.jsx';
 import '../blocks/primary-cta/block.jsx';
 import '../blocks/f-a-q/block.jsx';
 import '../blocks/custom-tabs/block.jsx';

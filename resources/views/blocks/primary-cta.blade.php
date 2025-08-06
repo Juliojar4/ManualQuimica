@@ -24,6 +24,7 @@
                         ], wc_get_checkout_url());
                     @endphp
                     
+                    {{-- Botão customizado para CTA de compra --}}
                     <a 
                         href="{{ esc_url($checkout_url) }}" 
                         class="inline-flex items-center bg-green-600 hover:bg-green-700 !text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 group"
@@ -58,19 +59,13 @@
             {{-- Imagem --}}
             <div class="space-y-4" data-aos="fade-left">
                 @if($imageUrl)
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl ">
                         <img 
                             src="{{ esc_url($imageUrl) }}" 
                             alt="{{ esc_attr($imageAlt) }}"
                             class="w-full h-96 object-cover"
                         >
-                        {{-- Overlay com gradiente --}}
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         
-                        {{-- Badge de produto --}}
-                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Produto #{{ $productId }}
-                        </div>
                     </div>
                 @else
                     {{-- Placeholder quando não há imagem --}}

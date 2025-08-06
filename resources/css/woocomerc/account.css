@@ -99,7 +99,7 @@
     .account-login {
         padding-top: 80px !important;
         padding-bottom: 80px !important;
-
+        flex-direction: column;
         .container-login-form {
             padding-right: 0px;
             border-right: none !important;

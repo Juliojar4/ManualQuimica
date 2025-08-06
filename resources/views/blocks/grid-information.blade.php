@@ -1,12 +1,12 @@
-<section class="grid-information-block py-20 px-6 bg-gray-50">
+<section class="grid-information-block py-10 md:py-20 px-6 bg-gray-50">
     {{-- Debug info (remover em produção) --}}
  
     
     <div class="container mx-auto max-w-7xl">
-        <h2 class="text-center mb-12">O que será abordado</h2>
+        <h2 class="text-center md:!mb-16">O que será abordado</h2>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             @foreach($cards as $index => $card)
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group" 
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden my-8 md:my-0  hover:shadow-xl transition-shadow duration-300 group" 
                  data-aos="fade-up" 
                  data-aos-delay="{{ $index * 100 }}">
                 
@@ -34,7 +34,7 @@
                 
                 {{-- Conteúdo --}}
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300">
+                    <h3 class="!text-[1.35rem] font-bold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300">
                         {!! wp_kses_post($card['title']) !!}
                     </h3>
                     

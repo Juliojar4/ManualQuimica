@@ -1,0 +1,120 @@
+/* Estilos do Editor */
+.testemunhos-block-editor {
+    background: #f9fafb;
+    border: 2px dashed #d1d5db !important;
+}
+
+/* Estilos do Frontend - Slider */
+.testimonials-slider {
+    position: relative;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    position: relative;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+/* Navegação do Splide */
+.splide__arrow {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.splide__arrow:hover {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    transform: scale(1.1);
+}
+
+.splide__arrow:hover svg {
+    color: white;
+}
+
+.splide__arrow--prev {
+    left: -4rem;
+}
+
+.splide__arrow--next {
+    right: -4rem;
+}
+
+/* Paginação do Splide */
+.splide__pagination {
+    padding: 0;
+    bottom: -3rem;
+}
+
+.splide__pagination li {
+    margin: 0 0.25rem;
+}
+
+.splide__pagination__page {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d1d5db;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.splide__pagination__page.is-active {
+    background: #3b82f6;
+    transform: scale(1.2);
+}
+
+.splide__pagination__page:hover {
+    background: #6b7280;
+}
+
+.splide__track {
+    height: 480px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.splide__list {
+        height: 420px !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .testimonial-card {
+        min-height: 300px;
+        margin: 0 0.5rem;
+    }
+    
+    .splide__arrow {
+        display: none;
+    }
+}
+
+/* Animações personalizadas */
+.testimonial-card .author-initials {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+.testimonial-card:hover .author-initials {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+}
+.testemunhos-block-editor:hover {
+    border-color: #3b82f6 !important;
+}

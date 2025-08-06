@@ -15,17 +15,11 @@
     transition: all 0.3s ease-out;
 }
 
-/* Custom scrollbar for very long content */
-.grid-information-block p {
-    max-height: 120px;
-    overflow-y: auto;
-}
+ 
 
 /* Mobile responsiveness improvements */
 @media (max-width: 768px) {
-    .grid-information-block {
-        padding: 1rem;
-    }
+ 
     
     .grid-information-block .gap-8 {
         gap: 1.5rem;

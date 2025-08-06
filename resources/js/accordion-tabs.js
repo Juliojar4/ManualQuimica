@@ -5,6 +5,19 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     initAccordionTabs();
+    
+    // Re-inicializa quando a tela é redimensionada
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            // Reset das animações após resize
+            const allImages = document.querySelectorAll('.dynamic-image');
+            allImages.forEach(img => {
+                img.classList.remove('mobile-slide-enter', 'mobile-slide-enter-active', 'mobile-slide-exit', 'mobile-slide-exit-active');
+            });
+        }, 250);
+    });
 });
 
 function initAccordionTabs() {
@@ -84,6 +97,23 @@ function closeAccordionItem(contentElement, iconElement) {
 }
 
 function switchToImage(index, allImages, indicator) {
+    const isMobile = window.innerWidth <= 1024;
+    
+    if (isMobile) {
+        // Animação específica para mobile
+        switchToImageMobile(index, allImages);
+    } else {
+        // Animação para desktop (mantém a atual)
+        switchToImageDesktop(index, allImages);
+    }
+    
+    // Atualiza o indicador
+    if (indicator) {
+        indicator.textContent = `Item ${index + 1}`;
+    }
+}
+
+function switchToImageDesktop(index, allImages) {
     // Esconde todas as imagens
     allImages.forEach((img) => {
         img.classList.remove('opacity-100');
@@ -97,9 +127,48 @@ function switchToImage(index, allImages, indicator) {
             allImages[index].classList.add('opacity-100');
         }, 200);
     }
+}
+
+function switchToImageMobile(index, allImages) {
+    // Encontra a imagem atual e a próxima
+    const currentImage = Array.from(allImages).find(img => img.classList.contains('opacity-100'));
+    const nextImage = allImages[index];
     
-    // Atualiza o indicador
-    if (indicator) {
-        indicator.textContent = `Item ${index + 1}`;
+    if (!nextImage || currentImage === nextImage) return;
+    
+    // Remove classes de animação anteriores
+    allImages.forEach(img => {
+        img.classList.remove('mobile-slide-enter', 'mobile-slide-enter-active', 'mobile-slide-exit', 'mobile-slide-exit-active');
+    });
+    
+    // Anima saída da imagem atual
+    if (currentImage) {
+        currentImage.classList.add('mobile-slide-exit');
+        
+        setTimeout(() => {
+            currentImage.classList.add('mobile-slide-exit-active');
+            currentImage.classList.remove('opacity-100');
+            currentImage.classList.add('opacity-0');
+        }, 50);
     }
+    
+    // Anima entrada da nova imagem
+    setTimeout(() => {
+        nextImage.classList.remove('opacity-0');
+        nextImage.classList.add('opacity-100', 'mobile-slide-enter');
+        
+        setTimeout(() => {
+            nextImage.classList.add('mobile-slide-enter-active');
+            nextImage.classList.remove('mobile-slide-enter');
+        }, 50);
+        
+        // Limpa classes após animação
+        setTimeout(() => {
+            nextImage.classList.remove('mobile-slide-enter-active');
+            if (currentImage) {
+                currentImage.classList.remove('mobile-slide-exit', 'mobile-slide-exit-active');
+            }
+        }, 600);
+        
+    }, currentImage ? 200 : 0);
 }

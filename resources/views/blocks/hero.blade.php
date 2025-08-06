@@ -1,4 +1,4 @@
-<section class="hero-block h-[70vh] bg-cover bg-[top] bg-no-repeat text-white py-20 px-6 relative" 
+<section class="hero-block h-[70vh] bg-cover bg-[top] bg-no-repeat text-white pb-20 pt-20 md:pt-32 px-6 relative" 
          @if($imageUrl)
          style="background-image: url('{{ esc_url($imageUrl) }}')"
          @else
@@ -21,7 +21,7 @@
             
             {{-- Botão moderno com animação química --}}
             @if($showButton ?? true)
-            <div data-aos="fade-in"   class="mt-8">
+            <div data-aos="fade-in" class="mt-8">
                 <a href="{{ $buttonUrl ?? '#conteudo' }}" class="relative inline-flex items-center gap-3 bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-gray-800 font-semibold py-2.5 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-out group overflow-hidden">
                     {{-- Animação de bolhas --}}
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

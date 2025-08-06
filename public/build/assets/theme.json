@@ -39,9 +39,19 @@
           "color": "oklch(98.7% .026 102.212)"
         },
         {
+          "name": "Yellow (100)",
+          "slug": "yellow-100",
+          "color": "oklch(97.3% .071 103.193)"
+        },
+        {
           "name": "Yellow (400)",
           "slug": "yellow-400",
           "color": "oklch(85.2% .199 91.936)"
+        },
+        {
+          "name": "Yellow (500)",
+          "slug": "yellow-500",
+          "color": "oklch(79.5% .184 86.047)"
         },
         {
           "name": "Green (50)",
@@ -134,9 +144,14 @@
           "color": "oklch(52% .105 223.128)"
         },
         {
-          "name": "Blue (300)",
-          "slug": "blue-300",
-          "color": "#d2e5f0"
+          "name": "Blue (500)",
+          "slug": "blue-500",
+          "color": "#096e96"
+        },
+        {
+          "name": "Blue (600)",
+          "slug": "blue-600",
+          "color": "#0e5c7b"
         },
         {
           "name": "Indigo (50)",
@@ -147,6 +162,11 @@
           "name": "Indigo (400)",
           "slug": "indigo-400",
           "color": "oklch(67.3% .182 276.935)"
+        },
+        {
+          "name": "Slate (400)",
+          "slug": "slate-400",
+          "color": "oklch(70.4% .04 256.788)"
         },
         {
           "name": "Slate (600)",
@@ -275,6 +295,11 @@
           "size": ".875rem"
         },
         {
+          "name": "base",
+          "slug": "base",
+          "size": "1rem"
+        },
+        {
           "name": "lg",
           "slug": "lg",
           "size": "1.125rem"
@@ -288,6 +313,11 @@
           "name": "2xl",
           "slug": "2xl",
           "size": "1.5rem"
+        },
+        {
+          "name": "3xl",
+          "slug": "3xl",
+          "size": "1.875rem"
         },
         {
           "name": "4xl",

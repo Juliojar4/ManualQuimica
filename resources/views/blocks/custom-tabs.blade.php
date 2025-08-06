@@ -13,7 +13,7 @@
                             data-accordion-target="accordion-{{ $index }}"
                             data-image-target="image-{{ $index }}"
                         >
-                            <h3 class="text-lg font-semibold text-gray-800 group-hover:text-teal-700 transition-colors duration-300">
+                            <h3 class="text-lg font-semibold !mb-0 text-gray-800 group-hover:text-teal-700 transition-colors duration-300">
                                 {!! wp_kses_post($item['title']) !!}
                             </h3>
                             <svg class="accordion-icon w-5 h-5 text-gray-500 transform transition-transform duration-300 group-hover:text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -28,7 +28,7 @@
                             style="{{ $index === 0 ? 'max-height: 24rem;' : 'max-height: 0;' }}"
                         >
                             <div class="p-6 border-t border-gray-100">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 leading-relaxed ">
                                     {!! wp_kses_post($item['content']) !!}
                                 </p>
                             </div>
@@ -52,7 +52,7 @@
                             <img 
                                 src="{{ esc_url($item['imageUrl']) }}" 
                                 alt="{{ esc_attr($item['imageAlt']) }}"
-                                class="w-full h-full object-cover {{ $index === 0 ? 'clip-path-open' : 'clip-path-closed' }}"
+                                class="w-full h-full object-cover rounded-2xl {{ $index === 0 ? 'clip-path-open' : 'clip-path-closed' }}"
                             >
                         @else
                             {{-- Placeholder quando não há imagem --}}
@@ -68,11 +68,6 @@
                         {{-- Overlay sutil --}}
                      </div>
                     @endforeach
-                    
-                    {{-- Indicador do item ativo --}}
-                    <div class="absolute bottom-4 left-4 bg-black/20 backdrop-blur-sm rounded-full px-4 py-2">
-                        <span class="current-indicator text-white text-sm font-medium">Item 1</span>
-                    </div>
                 </div>
             </div>
             

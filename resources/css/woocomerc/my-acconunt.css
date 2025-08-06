@@ -75,3 +75,25 @@
     }
 }
 
+.wp-block-woocommerce-checkout {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+.wp-block-woocommerce-checkout-actions-block .wc-block-checkout__actions_row {
+    justify-content: center !important;
+}
+
+.wc-block-components-button {
+        background: #0498d4;
+    border-radius: 5px;
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0 !important;
+}
+
+.wc-block-components-checkout-return-to-cart-button {
+    display:none;
+}
