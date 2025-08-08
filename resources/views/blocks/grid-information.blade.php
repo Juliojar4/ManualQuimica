@@ -4,7 +4,7 @@
         
         {{-- Slider de Cards --}}
         <div>
-            <div class="splide grid-information-slider" data-aos="fade-up" data-splide='{"type":"loop","autoplay":false,"perPage":4,"perMove":1,"gap":"2rem","pagination":false,"arrows":true,"pauseOnHover":false,"width":"100%","fixedWidth":false,"autoWidth":false,"trimSpace":false,"breakpoints":{"1024":{"perPage":2,"gap":"1.5rem"},"768":{"perPage":1,"gap":"1rem","arrows":false}}}'>
+            <div class="splide grid-information-slider" data-aos="fade-up" data-splide='{"type":"loop","autoplay":true,"perPage":4,"perMove":1,"gap":"2rem","pagination":false,"arrows":true,"pauseOnHover":false,"width":"100%","fixedWidth":false,"autoWidth":false,"trimSpace":false,"breakpoints":{"1024":{"perPage":2,"gap":"1.5rem"},"768":{"perPage":1,"gap":"1rem","arrows":false}}}'>
                 <div class="splide__track">
                     <ul class="splide__list">
                         @foreach($cards as $index => $card)

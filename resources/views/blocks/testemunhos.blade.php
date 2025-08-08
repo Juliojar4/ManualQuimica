@@ -20,7 +20,7 @@
         </div>
 
         {{-- Slider de Testemunhos --}}
-        <div class="splide testimonials-slider" data-aos="fade-up" data-aos-delay="200" data-splide='{"type":"loop","autoplay":{{ $autoplay ? 'true' : 'false' }},"interval":{{ $autoplaySpeed }},"perPage":3,"perMove":1,"gap":"2rem","pagination":true,"arrows":true,"pauseOnHover":false,"width":"100%","fixedWidth":false,"autoWidth":false,"trimSpace":false,"breakpoints":{"1024":{"perPage":2,"gap":"1.5rem"},"768":{"perPage":1,"gap":"1rem","arrows":false}}}'>
+        <div class="splide testimonials-slider" data-aos="fade-up" data-aos-delay="200" data-splide='{"type":"loop","autoplay":{{ $autoplay ? 'true' : 'false' }},"interval":{{ $autoplaySpeed }},"perPage":3,"perMove":1,"gap":"2rem","pagination"false","arrows":true,"pauseOnHover":false,"width":"100%","fixedWidth":false,"autoWidth":false,"trimSpace":false,"breakpoints":{"1024":{"perPage":2,"gap":"1.5rem"},"768":{"perPage":1,"gap":"1rem","arrows":false}}}'>
             <div class="splide__track flex items-center !h-[400px]">
                 <ul class="splide__list">
                     @foreach($testimonials as $testimonial)

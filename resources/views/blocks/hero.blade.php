@@ -201,8 +201,8 @@
 @media (max-width: 640px) {
   .hero-block {
     min-height: 75vh;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
   }
   
   .hero-block h1 {
