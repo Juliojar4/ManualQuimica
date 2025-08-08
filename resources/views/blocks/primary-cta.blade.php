@@ -63,7 +63,7 @@
                         <img 
                             src="{{ esc_url($imageUrl) }}" 
                             alt="{{ esc_attr($imageAlt) }}"
-                            class="w-full h-96 object-scale-down"
+                            class="w-full h-auto object-cover"
                         >
                         
                     </div>
