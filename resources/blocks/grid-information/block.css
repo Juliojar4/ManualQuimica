@@ -35,3 +35,7 @@
 .grid-information-block-editor:hover {
     border-color: #3b82f6 !important;
 }
+
+.grid-information-slider .splide__arrow svg {
+    color: black !important;
+}

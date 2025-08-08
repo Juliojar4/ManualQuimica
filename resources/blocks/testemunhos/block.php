@@ -1,23 +1,33 @@
 <?php
 // Server-side rendering for Testemunhos block
 
-$testimonials = $attributes['testimonials'] ?? [];
+$testimonials = $attributes['testimonials'] ?? [
+    [
+        'id' => 1,
+        'name' => 'Julio Jara',
+        'initials' => 'JJ',
+        'testimonial' => 'Excelente serviço! Recomendo para todos que procuram qualidade e profissionalismo.',
+        'rating' => 5,
+        'image' => ''
+    ]
+];
 
-// Preparar dados dos testemunhos
-$prepared_testimonials = [];
-foreach ($testimonials as $testimonial) {
-    $prepared_testimonials[] = [
-        'content' => wp_kses_post($testimonial['content'] ?? ''),
-        'authorName' => sanitize_text_field($testimonial['authorName'] ?? ''),
-        'authorSurname' => sanitize_text_field($testimonial['authorSurname'] ?? ''),
-        'authorInitials' => strtoupper(sanitize_text_field($testimonial['authorInitials'] ?? '')),
-        'rating' => intval($testimonial['rating'] ?? 5)
-    ];
-}
+$backgroundColor = $attributes['backgroundColor'] ?? '#ffffff';
+$textColor = $attributes['textColor'] ?? '#374151';
+$accentColor = $attributes['accentColor'] ?? '#3b82f6';
+$showRating = $attributes['showRating'] ?? true;
+$autoplay = $attributes['autoplay'] ?? true;
+$autoplaySpeed = $attributes['autoplaySpeed'] ?? 3000;
 
 $block_data = [
-    'testimonials' => $prepared_testimonials,
-    'slug' => 'testemunhos'
+    'testimonials' => $testimonials,
+    'backgroundColor' => $backgroundColor,
+    'textColor' => $textColor,
+    'accentColor' => $accentColor,
+    'showRating' => $showRating,
+    'autoplay' => $autoplay,
+    'autoplaySpeed' => $autoplaySpeed,
+    'blockId' => 'testemunhos-' . wp_generate_uuid4()
 ];
 
 echo view('blocks.testemunhos', $block_data)->render();

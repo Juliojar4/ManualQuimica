@@ -1,8 +1,6 @@
-import '../blocks/testemunhos/block.jsx';
-import '../blocks/primary-cta/block.jsx';
-import '../blocks/f-a-q/block.jsx';
-import '../blocks/custom-tabs/block.jsx';
-import '../blocks/scroll-component/block.jsx';
+// Import underscore compatibility first (must be loaded before any WordPress components)
+import './underscore-compat';
+
 /**
  * Main file to register all custom blocks
  * 
@@ -21,5 +19,10 @@ import '../css/blocks.css';
 // Block imports will be automatically added here
 import '../blocks/hero/block.jsx';
 import '../blocks/grid-information/block.jsx';
+import '../blocks/testemunhos/block.jsx';
+import '../blocks/primary-cta/block.jsx';
+import '../blocks/f-a-q/block.jsx';
+import '../blocks/custom-tabs/block.jsx';
+import '../blocks/scroll-component/block.jsx';
 
 console.log('🎨 Auto Blocks - System loaded!');

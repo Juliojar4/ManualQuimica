@@ -1,4 +1,4 @@
-<section class="accordion-with-images-block py-20 px-6 bg-white">
+<section class="accordion-with-images-block my-10 lg:my-20 px-6 bg-white">
     <div class="container mx-auto max-w-7xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             

@@ -23,6 +23,7 @@ class BlockManager
             'custom-tabs',
             'f-a-q',
             'primary-cta',
+        
             'testemunhos',
     ];
 

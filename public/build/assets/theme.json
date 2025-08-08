@@ -34,24 +34,24 @@
           "color": "oklch(63.7% .237 25.331)"
         },
         {
+          "name": "Red (600)",
+          "slug": "red-600",
+          "color": "oklch(57.7% .245 27.325)"
+        },
+        {
+          "name": "Red (800)",
+          "slug": "red-800",
+          "color": "oklch(44.4% .177 26.899)"
+        },
+        {
           "name": "Yellow (50)",
           "slug": "yellow-50",
           "color": "oklch(98.7% .026 102.212)"
         },
         {
-          "name": "Yellow (100)",
-          "slug": "yellow-100",
-          "color": "oklch(97.3% .071 103.193)"
-        },
-        {
           "name": "Yellow (400)",
           "slug": "yellow-400",
           "color": "oklch(85.2% .199 91.936)"
-        },
-        {
-          "name": "Yellow (500)",
-          "slug": "yellow-500",
-          "color": "oklch(79.5% .184 86.047)"
         },
         {
           "name": "Green (50)",
@@ -99,6 +99,11 @@
           "color": "oklch(95.3% .051 180.801)"
         },
         {
+          "name": "Teal (300)",
+          "slug": "teal-300",
+          "color": "oklch(85.5% .138 181.071)"
+        },
+        {
           "name": "Teal (400)",
           "slug": "teal-400",
           "color": "oklch(77.7% .152 181.912)"
@@ -129,6 +134,11 @@
           "color": "oklch(95.6% .045 203.388)"
         },
         {
+          "name": "Cyan (400)",
+          "slug": "cyan-400",
+          "color": "oklch(78.9% .154 211.53)"
+        },
+        {
           "name": "Cyan (500)",
           "slug": "cyan-500",
           "color": "oklch(71.5% .143 215.221)"
@@ -144,6 +154,11 @@
           "color": "oklch(52% .105 223.128)"
         },
         {
+          "name": "Blue (400)",
+          "slug": "blue-400",
+          "color": "#0498d4"
+        },
+        {
           "name": "Blue (500)",
           "slug": "blue-500",
           "color": "#096e96"
@@ -152,6 +167,11 @@
           "name": "Blue (600)",
           "slug": "blue-600",
           "color": "#0e5c7b"
+        },
+        {
+          "name": "Blue (700)",
+          "slug": "blue-700",
+          "color": "#1e3f50"
         },
         {
           "name": "Indigo (50)",
@@ -333,6 +353,11 @@
           "name": "6xl",
           "slug": "6xl",
           "size": "3.75rem"
+        },
+        {
+          "name": "7xl",
+          "slug": "7xl",
+          "size": "4.5rem"
         }
       ]
     }

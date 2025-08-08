@@ -31,9 +31,7 @@
 }
 
 /* Removendo efeito de gradiente para manter cores naturais */
-.title-natural {
-  color: inherit;
-}
+ 
 
 /* Animação de bolhas químicas para o botão - Versão Ultra Suave */
 .bubble {

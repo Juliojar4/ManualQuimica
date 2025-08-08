@@ -1,6 +1,6 @@
 {
   "editor.deps.json": {
-    "file": "assets/editor.deps-C4hpy_V3.json",
+    "file": "assets/editor.deps-CXX3P9b5.json",
     "src": "editor.deps.json"
   },
   "resources/blocks/custom-tabs/block.css": {
@@ -8,23 +8,41 @@
     "src": "resources/blocks/custom-tabs/block.css",
     "isEntry": true
   },
+  "resources/blocks/custom-tabs/block.js": {
+    "file": "assets/block-l0sNRNKZ.js",
+    "name": "block",
+    "src": "resources/blocks/custom-tabs/block.js",
+    "isEntry": true
+  },
   "resources/blocks/f-a-q/block.css": {
     "file": "assets/block-QTWTmr2Q.css",
     "src": "resources/blocks/f-a-q/block.css",
     "isEntry": true
   },
+  "resources/blocks/f-a-q/block.js": {
+    "file": "assets/block-DP2rzg_V.js",
+    "name": "block",
+    "src": "resources/blocks/f-a-q/block.js",
+    "isEntry": true
+  },
   "resources/blocks/grid-information/block.css": {
-    "file": "assets/block-KQ2o4wuI.css",
+    "file": "assets/block-BA28Yn_a.css",
     "src": "resources/blocks/grid-information/block.css",
     "isEntry": true
   },
+  "resources/blocks/grid-information/block.js": {
+    "file": "assets/block-K6Dvbx-E.js",
+    "name": "block",
+    "src": "resources/blocks/grid-information/block.js",
+    "isEntry": true
+  },
   "resources/blocks/hero/block.css": {
-    "file": "assets/block-BvpBjQ51.css",
+    "file": "assets/block-BOebX3rc.css",
     "src": "resources/blocks/hero/block.css",
     "isEntry": true
   },
   "resources/blocks/hero/block.js": {
-    "file": "assets/block-CnLn7ZdS.js",
+    "file": "assets/block-gJX6PrLr.js",
     "name": "block",
     "src": "resources/blocks/hero/block.js",
     "isEntry": true
@@ -34,18 +52,36 @@
     "src": "resources/blocks/primary-cta/block.css",
     "isEntry": true
   },
+  "resources/blocks/primary-cta/block.js": {
+    "file": "assets/block-C6Kfwj0f.js",
+    "name": "block",
+    "src": "resources/blocks/primary-cta/block.js",
+    "isEntry": true
+  },
   "resources/blocks/scroll-component/block.css": {
     "file": "assets/block-BzBd3kUg.css",
     "src": "resources/blocks/scroll-component/block.css",
     "isEntry": true
   },
+  "resources/blocks/scroll-component/block.js": {
+    "file": "assets/block-RnTpOC5-.js",
+    "name": "block",
+    "src": "resources/blocks/scroll-component/block.js",
+    "isEntry": true
+  },
   "resources/blocks/testemunhos/block.css": {
-    "file": "assets/block-DRLVCciE.css",
+    "file": "assets/block-D-odA8a6.css",
     "src": "resources/blocks/testemunhos/block.css",
     "isEntry": true
   },
+  "resources/blocks/testemunhos/block.js": {
+    "file": "assets/block-DVN7Oi2P.js",
+    "name": "block",
+    "src": "resources/blocks/testemunhos/block.js",
+    "isEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-E_rxQNDi.css",
+    "file": "assets/app-D6AS1f8b.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -55,22 +91,22 @@
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-Iot6CEDk.css",
+    "file": "assets/editor-Caf_mkUp.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-D3iNz0fN.js",
+    "file": "assets/app-CPvgRoia.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
       "assets/app-D7wrQ6zr.css",
-      "assets/app-E_rxQNDi.css"
+      "assets/app-D6AS1f8b.css"
     ]
   },
   "resources/js/blocks.js": {
-    "file": "assets/blocks-CF8oBLNB.js",
+    "file": "assets/blocks-B73kiMGw.js",
     "name": "blocks",
     "src": "resources/js/blocks.js",
     "isEntry": true,
@@ -79,7 +115,7 @@
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-DI6aW6Nk.js",
+    "file": "assets/editor-DHHiXn1u.js",
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true,
@@ -87,7 +123,7 @@
       "resources/js/blocks.js"
     ],
     "css": [
-      "assets/editor-Iot6CEDk.css",
+      "assets/editor-Caf_mkUp.css",
       "assets/blocks-DUf_qGu0.css"
     ]
   }

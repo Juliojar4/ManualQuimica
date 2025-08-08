@@ -21,9 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   console.log('Title text:', titleText);
   
-  // Limpar container
-  container.innerHTML = '';
-  container.className = 'inline-block title-natural';
+ 
   
   // Dividir texto em palavras
   const words = titleText.split(' ');

@@ -1,4 +1,4 @@
-<section class="primary-cta-block py-20 px-6 bg-gradient-to-br from-green-50 to-emerald-100">
+<section class="primary-cta-block py-10 lg:py-20 px-6 bg-gradient-to-br from-green-50 to-emerald-100">
     <div class="container mx-auto max-w-6xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             

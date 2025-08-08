@@ -2,16 +2,48 @@
     "name": "doctailwind/testemunhos",
     "title": "Testemunhos",
     "category": "design",
-    "icon": "star-filled",
-    "description": "Bloco de testemunhos com slider interativo",
+    "icon": "format-quote",
+    "description": "Bloco de testemunhos com slider interativo e animações de hover",
     "textdomain": "doctailwind",
-    "editorScript": "file:./block.jsx",
     "style": "file:./block.css",
     "render": "file:./block.php",
     "attributes": {
         "testimonials": {
             "type": "array",
-            "default": []
+            "default": [
+                {
+                    "id": 1,
+                    "name": "Julio Jara",
+                    "initials": "JJ",
+                    "testimonial": "Excelente serviço! Recomendo para todos que procuram qualidade e profissionalismo.",
+                    "rating": 5,
+                    "image": ""
+                }
+            ]
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#374151"
+        },
+        "accentColor": {
+            "type": "string",
+            "default": "#3b82f6"
+        },
+        "showRating": {
+            "type": "boolean",
+            "default": true
+        },
+        "autoplay": {
+            "type": "boolean",
+            "default": true
+        },
+        "autoplaySpeed": {
+            "type": "number",
+            "default": 3000
         }
     }
 }

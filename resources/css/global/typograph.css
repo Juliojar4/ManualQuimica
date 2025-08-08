@@ -11,6 +11,8 @@ h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   color: #0e5c7b;
   margin-bottom: 0.5em;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 h1 {
