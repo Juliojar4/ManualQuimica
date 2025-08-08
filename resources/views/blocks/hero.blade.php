@@ -67,9 +67,25 @@
             
             {{-- Conteúdo do botão --}}
             <div class="relative z-10 flex items-center gap-3">
-              <svg class="w-5 h-5 text-white transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
+<svg class="w-5 h-5 text-white transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  {{-- Tubo principal --}}
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 4v14a2 2 0 002 2h0a2 2 0 002-2V4"/>
+  
+  {{-- Borda superior --}}
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4h6"/>
+  
+  {{-- Líquido químico --}}
+  <path fill="currentColor" fill-opacity="0.3" d="M10.5 12v5.5c0 0.8 0.7 1.5 1.5 1.5s1.5-0.7 1.5-1.5V12h-3z"/>
+  
+  {{-- Bolhas --}}
+  <circle cx="11.5" cy="15" r="0.3" fill="currentColor"/>
+  <circle cx="12.5" cy="13.5" r="0.2" fill="currentColor" opacity="0.8"/>
+  
+  {{-- Vapor saindo --}}
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 2c0-0.5 0.2-1 0.5-1s0.5 0.5 0.5 1"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12.5 1.5c0-0.3 0.1-0.5 0.3-0.5s0.2 0.2 0.2 0.5"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10.5 1.8c0-0.2 0.1-0.3 0.2-0.3s0.3 0.1 0.3 0.3"/>
+</svg>
               <span class="text-lg text-white">{{ $buttonText ?? 'Começar a Aprender' }}</span>
             </div>
           </a>

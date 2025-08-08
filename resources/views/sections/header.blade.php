@@ -1,5 +1,5 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white" id="main-header">
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto max-w-7xl px-6">
     <div class="flex justify-between items-center h-16 lg:h-20">
       
       {{-- Logo --}}

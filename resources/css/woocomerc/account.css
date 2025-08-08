@@ -37,13 +37,24 @@
             }
 
             .button-log-in {
-                background-color: #157a63 !important;
                 width: 100%;
-                color: #d2f0e5;
-                padding-top: 15px !important;
-                padding-bottom: 15px !important;
-
+                background: linear-gradient(to right, rgb(20 184 166), rgb(8 145 178));
+                color: rgb(255 255 255) !important;
+                font-weight: 500;
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                border-radius: 0.5rem;
+                transition-property: all;
+                transition-duration: 300ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
+
+            .button-log-in:hover {
+    background: linear-gradient(to right, rgb(13 148 136), rgb(14 116 144));
+    transform: scale(1.05);
+}
         }
     }
 
@@ -79,17 +90,42 @@
         }
 
         .button-register {
-                background-color: #157a63 !important;
                 width: 100%;
-                color: #d2f0e5;
-                    margin-top: 85px;
-
-                padding-top: 15px !important;
-                padding-bottom: 15px !important;
+                background: linear-gradient(to right, rgb(20 184 166), rgb(8 145 178));
+                color: rgb(255 255 255) !important;
+                font-weight: 500;
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                border-radius: 0.5rem;
+                transition-property: all;
+                transition-duration: 300ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                margin-top: 68px;
 
         }
 
+                    .button-register:hover {
+    background: linear-gradient(to right, rgb(13 148 136), rgb(14 116 144));
+    transform: scale(1.05);
+}
+
     }
+}
+
+.account-login .container-login-form .login-form .forgot-passoword  {
+    padding: 10px 0 !important;
+    margin-left: 6px !important;
+}
+
+.account-login .container-login-form .login-form .forgot-passoword a {
+    color: white !important;
+    font-size: 1rem !important;
+}
+
+.woocommerce-MyAccount-navigation-link--edit-address {
+    display: none !important;
 }
 
 .important-notices p {
@@ -111,6 +147,12 @@
             padding-left: 0px;
         }
     }
+
+            .button-register {
+        
+                margin-top: 20px !important;
+
+        }
 }
 
 
@@ -138,6 +180,32 @@
         font-family: "Oswald", sans-serif;
     
     }
+}
+
+.input-text {
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    background-color: rgb(51 65 85) !important;
+    border: 1px solid rgb(71 85 105) !important;
+    border-radius: 0.5rem !important;
+    color: rgb(255 255 255) !important;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke !important;
+    transition-duration: 300ms !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.input-text::placeholder {
+    color: rgb(156 163 175) !important;
+}
+
+.input-text:focus {
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important;
+    border-color: rgb(20 184 166) !important;
+    box-shadow: 0 0 0 1px rgb(20 184 166) !important;
 }
 
 .woocommerce-password-strength {

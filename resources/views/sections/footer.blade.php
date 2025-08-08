@@ -6,7 +6,7 @@
   </div>
 
   {{-- Seção Principal --}}
-  <div class="relative container mx-auto px-6 py-16">
+  <div class="relative container mx-auto max-w-7xl px-6 py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
       {{-- Coluna 1: Sobre o Manual de Química --}}
@@ -15,7 +15,7 @@
           <div class="w-12 h-12 bg-gradient-to-br rounded-xl flex items-center justify-center">
                   {!! get_custom_logo() !!}
           </div>
-          <h3 class="text-xl font-bold !mb-0">Manual de Química</h3>
+          <h3 class="text-xl font-bold !mb-0 !text-white">Manual de Química</h3>
         </div>
         
         <p class="text-gray-300 leading-relaxed">
@@ -49,7 +49,7 @@
       
       {{-- Coluna 2: Navegação Rápida --}}
       <div class="space-y-6">
-        <h3 class="text-lg font-semibold flex items-center">
+        <h3 class="text-lg font-semibold flex items-center !text-white">
           <span class="w-2 h-6 bg-teal-400 rounded-full mr-3"></span>
           Navegação Rápida
         </h3>
@@ -65,7 +65,7 @@
             </span>
           </a></li>
 
-          <li><a href="/materiais" class="text-gray-300 hover:text-blue-600 transition-all duration-500 flex items-center group hover:translate-x-1">
+          <li><a href="/#venda" class="text-gray-300 hover:text-blue-600 transition-all duration-500 flex items-center group hover:translate-x-1">
             <svg class="w-4 h-4 mr-2 group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
@@ -93,7 +93,7 @@
       
       {{-- Coluna 4: Newsletter & Contato --}}
       <div class="space-y-6">
-        <h3 class="text-lg font-semibold flex items-center">
+        <h3 class="text-lg font-semibold flex items-center !text-white">
           <span class="w-2 h-6 bg-emerald-400 rounded-full mr-3"></span>
           Fique Atualizado
         </h3>

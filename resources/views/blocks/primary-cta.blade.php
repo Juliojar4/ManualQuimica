@@ -1,4 +1,4 @@
-<section class="primary-cta-block py-10 lg:py-20 px-6 bg-gradient-to-br from-green-50 to-emerald-100">
+<section id="venda" class="primary-cta-block py-10 lg:py-20 px-6 bg-gradient-to-br from-green-50 to-emerald-100">
     <div class="container mx-auto max-w-6xl">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
@@ -59,11 +59,11 @@
             {{-- Imagem --}}
             <div class="space-y-4" data-aos="fade-left">
                 @if($imageUrl)
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl ">
+                    <div class="relative rounded-2xl overflow-hidden">
                         <img 
                             src="{{ esc_url($imageUrl) }}" 
                             alt="{{ esc_attr($imageAlt) }}"
-                            class="w-full h-96 object-cover"
+                            class="w-full h-96 object-scale-down"
                         >
                         
                     </div>
