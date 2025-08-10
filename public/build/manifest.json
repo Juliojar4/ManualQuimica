@@ -81,7 +81,7 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-oeAFD0_q.css",
+    "file": "assets/app-eOG2O9Lf.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -91,18 +91,18 @@
     "isEntry": true
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-B8n9rr-6.css",
+    "file": "assets/editor-CikgD4iT.css",
     "src": "resources/css/editor.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-BbxZIF4e.js",
+    "file": "assets/app-C7Wkm5Gv.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
       "assets/app-D7wrQ6zr.css",
-      "assets/app-oeAFD0_q.css"
+      "assets/app-eOG2O9Lf.css"
     ]
   },
   "resources/js/blocks.js": {
@@ -115,7 +115,7 @@
     ]
   },
   "resources/js/editor.js": {
-    "file": "assets/editor-DYEp7ZjR.js",
+    "file": "assets/editor-CAl1jltU.js",
     "name": "editor",
     "src": "resources/js/editor.js",
     "isEntry": true,
@@ -123,7 +123,7 @@
       "resources/js/blocks.js"
     ],
     "css": [
-      "assets/editor-B8n9rr-6.css",
+      "assets/editor-CikgD4iT.css",
       "assets/blocks-DUf_qGu0.css"
     ]
   }

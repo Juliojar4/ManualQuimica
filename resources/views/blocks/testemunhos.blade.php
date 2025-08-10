@@ -39,8 +39,8 @@
                     "autoWidth": false,
                     "trimSpace": false,
                     "breakpoints": {
-                        "1024": { "perPage": 2, "gap": "1.5rem" },
-                        "768": { "perPage": 1, "gap": "1rem", "arrows": false }
+                        "1024": { "perPage": 2, "gap": "1.5rem", "pagination": false },
+                        "768": { "perPage": 1, "gap": "1rem", "arrows": false, "pagination": true }
                     }
                 }'>
                 <div class="splide__track flex items-center !h-[400px]">
@@ -126,17 +126,13 @@
                 </div>
             </div>
 
-            {{-- Indicadores do slider --}}
+            {{-- Paginação do slider --}}
             <div class="splide__pagination"></div>
         </div>
     </section>
 
     <style>
         /* Estilos específicos para este bloco */
-        #{{ $blockId }} .splide__pagination__page.is-active {
-            background: {{ $accentColor }} !important;
-        }
-
         #{{ $blockId }} .testimonial-card:hover {
             transform: translateY(-5px) !important;
             border-color: {{ $accentColor }} !important;
@@ -157,10 +153,62 @@
             flex-shrink: 0 !important;
         }
 
+        /* Paginação do slider - mesmo estilo do grid-information */
+        #{{ $blockId }} .splide__pagination {
+            padding: 0;
+            bottom: auto;
+            position: relative;
+            display: none !important;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            z-index: 10;
+        }
+
+        #{{ $blockId }} .splide__pagination li {
+            margin: 0 0.25rem;
+        }
+
+        #{{ $blockId }} .splide__pagination__page {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #d1d5db;
+            border: 2px solid #9ca3af;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        #{{ $blockId }} .splide__pagination__page.is-active {
+            background: {{ $accentColor }};
+            border-color: {{ $accentColor }};
+            transform: scale(1.3);
+            opacity: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #{{ $blockId }} .splide__pagination__page:hover {
+            background: oklch(20.8% .042 265.755);
+            border-color: oklch(20.8% .042 265.755) ;
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
         /* Responsividade específica do bloco */
         @media (max-width: 1024px) {
             #{{ $blockId }} .splide__slide {
                 width: calc(50% - 0.75rem) !important;
+            }
+            
+            /* Paginação para tablet */
+            #{{ $blockId }} .splide__pagination {
+                margin-top: 1.5rem;
+            }
+            
+            #{{ $blockId }} .splide__pagination__page {
+                width: 16px;
+                height: 16px;
             }
         }
 
@@ -168,6 +216,25 @@
             #{{ $blockId }} .splide__slide {
                 width: 100% !important;
                 margin-right: 0 !important;
+            }
+            
+            /* Paginação mobile - apenas no mobile com gap de 0.25rem */
+            #{{ $blockId }} .splide__pagination {
+                display: flex !important;
+                margin-top: 1.5rem;
+                gap: 0.25rem;
+            }
+            
+            #{{ $blockId }} .splide__pagination__page {
+                width: 18px;
+                height: 18px;
+                border: 3px solid #9ca3af;
+                background: #d1d5db;
+                touch-action: manipulation;
+            }
+            
+            #{{ $blockId }} .splide__pagination__page.is-active {
+                transform: scale(1.2);
             }
         }
     </style>
@@ -186,7 +253,7 @@
                         autoplay: {{ $autoplay ? 'true' : 'false' }},
                         interval: {{ $autoplaySpeed }},
                         pauseOnHover: false,
-                        pagination: true,
+                        pagination: false,
                         arrows: true,
                         width: '100%',
                         fixedWidth: false,
@@ -196,11 +263,13 @@
                             1024: {
                                 perPage: 2,
                                 gap: '1.5rem',
+                                pagination: false,
                             },
                             768: {
                                 perPage: 1,
                                 gap: '1rem',
                                 arrows: false,
+                                pagination: true,
                             }
                         }
                     };

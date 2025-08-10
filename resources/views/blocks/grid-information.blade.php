@@ -4,7 +4,7 @@
         
         {{-- Slider de Cards --}}
         <div>
-            <div class="splide grid-information-slider" data-aos="fade-up" data-splide='{"type":"loop","autoplay":true,"perPage":4,"perMove":1,"gap":"2rem","pagination":false,"arrows":true,"pauseOnHover":false,"width":"100%","fixedWidth":false,"autoWidth":false,"trimSpace":false,"breakpoints":{"1024":{"perPage":2,"gap":"1.5rem"},"768":{"perPage":1,"gap":"1rem","arrows":false}}}'>
+            <div class="splide grid-information-slider" data-aos="fade-up" data-splide='{"type":"loop","autoplay":true,"perPage":4,"perMove":1,"gap":"2rem","pagination":false,"arrows":true,"pauseOnHover":false,"width":"100%","fixedWidth":false,"autoWidth":false,"trimSpace":false,"breakpoints":{"1024":{"perPage":2,"gap":"1.5rem"},"768":{"perPage":1,"gap":"1rem","arrows":false,"pagination":true}}}'>
                 <div class="splide__track">
                     <ul class="splide__list">
                         @foreach($cards as $index => $card)
@@ -64,6 +64,9 @@
                     </svg>
                 </button>
             </div>
+            
+            {{-- Paginação do slider --}}
+            <div class="splide__pagination"></div>
         </div>
         
         {{-- Indicadores do slider --}}
@@ -145,11 +148,13 @@
 /* Paginação do slider */
 .grid-information-slider .splide__pagination {
     padding: 0;
-    bottom: -3rem;
-    display: flex;
+    bottom: auto;
+    position: relative;
+    display: flex !important;
     justify-content: center;
     gap: 0.5rem;
     margin-top: 2rem;
+    z-index: 10;
 }
 
 .grid-information-slider .splide__pagination li {
@@ -157,22 +162,29 @@
 }
 
 .grid-information-slider .splide__pagination__page {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    background: #d1d5db;
-    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.7);
     transition: all 0.3s ease;
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .grid-information-slider .splide__pagination__page.is-active {
     background: oklch(20.8% .042 265.755);
-    transform: scale(1.2);
+    border-color: oklch(20.8% .042 265.755);
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid-information-slider .splide__pagination__page:hover {
-    background: #6b7280;
+    background: oklch(20.8% .042 265.755);
+    border-color: oklch(20.8% .042 265.755);
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 /* Estilos do slider */
@@ -212,6 +224,16 @@
     .grid-information-slider .splide__arrows {
         gap: 0.75rem !important;
     }
+    
+    /* Paginação para tablet */
+    .grid-information-slider .splide__pagination {
+        margin-top: 1.5rem;
+    }
+    
+    .grid-information-slider .splide__pagination__page {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -233,6 +255,23 @@
     .grid-information-slider .splide__arrows {
         display: none !important;
     }
+    
+    /* Paginação mobile */
+    .grid-information-slider .splide__pagination {
+        margin-top: 1.5rem;
+        gap: 0.25rem;
+    }
+    
+    .grid-information-slider .splide__pagination__page {
+        width: 15px;
+        height: 15px;
+        border: 3px solid rgba(255, 255, 255, 0.8);
+        touch-action: manipulation;
+    }
+    
+    .grid-information-slider .splide__pagination__page.is-active {
+        transform: scale(1.2);
+    }
 }
 </style>
 
@@ -248,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 perMove: 1,
                 gap: '2rem',
                 autoplay: false,
-                pagination: true,
+                pagination: false,
                 arrows: true,
                 width: '100%',
                 fixedWidth: false,
@@ -258,11 +297,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     1024: {
                         perPage: 2,
                         gap: '1.5rem',
+                        pagination: true,
                     },
                     768: {
                         perPage: 1,
                         gap: '1rem',
                         arrows: false,
+                        pagination: true,
                     }
                 }
             };

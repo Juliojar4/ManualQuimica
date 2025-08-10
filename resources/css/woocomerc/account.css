@@ -24,7 +24,7 @@
             border: none !important;
             padding: 20px !important;
 
-            label{
+            label {
                 color: #d2f0e5;
                 font-weight: 600;
             }
@@ -52,9 +52,9 @@
             }
 
             .button-log-in:hover {
-    background: linear-gradient(to right, rgb(13 148 136), rgb(14 116 144));
-    transform: scale(1.05);
-}
+                background: linear-gradient(to right, rgb(13 148 136), rgb(14 116 144));
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -78,7 +78,7 @@
             padding: 20px !important;
             border: none !important;
 
-            label{
+            label {
                 color: #d2f0e5;
                 font-weight: 600;
             }
@@ -86,31 +86,29 @@
 
         .woocommerce-password-strength {
             margin-top: 10px;
-            border-radius: .25rem;
+            border-radius: 0.25rem;
         }
 
         .button-register {
-                width: 100%;
-                background: linear-gradient(to right, rgb(20 184 166), rgb(8 145 178));
-                color: rgb(255 255 255) !important;
-                font-weight: 500;
-                padding-top: 0.75rem;
-                padding-bottom: 0.75rem;
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-                border-radius: 0.5rem;
-                transition-property: all;
-                transition-duration: 300ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                margin-top: 68px;
-
+            width: 100%;
+            background: linear-gradient(to right, rgb(20 184 166), rgb(8 145 178));
+            color: rgb(255 255 255) !important;
+            font-weight: 500;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            border-radius: 0.5rem;
+            transition-property: all;
+            transition-duration: 300ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 68px;
         }
 
         .button-register:hover {
             background: linear-gradient(to right, rgb(13 148 136), rgb(14 116 144));
             transform: scale(1.05);
         }
-
     }
 }
 
@@ -118,7 +116,7 @@
     padding-inline: 20px !important;
 }
 
-.account-login .container-login-form .login-form .forgot-passoword  {
+.account-login .container-login-form .login-form .forgot-passoword {
     padding: 10px 0 !important;
     margin-left: 6px !important;
 }
@@ -135,6 +133,32 @@
 .important-notices p {
     color: #342923;
 }
+.wc-block-components-sidebar-layout {
+    padding-inline: 20px !important;
+    padding-top: 40px !important;
+}
+
+.wp-block-woocommerce-cart {
+    padding-top: 80px !important;
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+}
+
+.wp-block-button a {
+    width: 150px;
+    background: linear-gradient(to right, rgb(20 184 166), rgb(8 145 178));
+    color: rgb(255 255 255) !important;
+    font-weight: 500;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media (max-width: 1024px) {
     .account-login {
         padding-top: 80px !important;
@@ -161,8 +185,13 @@
         flex-direction: column;
         gap: 15px;
     }
-}
 
+    .wp-block-woocommerce-cart {
+        padding-top: 40px !important;
+        max-width: 1440px !important;
+        margin: 0 auto !important;
+    }
+}
 
 .woocommerce-MyAccount-navigation {
     ul {
@@ -186,7 +215,6 @@
         margin-bottom: 30px;
         font-size: 1.5rem;
         font-family: "Oswald", sans-serif;
-    
     }
 }
 
