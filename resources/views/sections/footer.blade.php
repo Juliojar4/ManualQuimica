@@ -717,6 +717,7 @@
                     href.includes('/downloads/') || // Excluir downloads
                     href.includes('minha-conta/downloads') || // Excluir área de downloads
                     href.includes('my-account/downloads') || // Excluir downloads em inglês
+                    href === '/#venda' || href.endsWith('#venda') || // Excluir seção venda
                     currentUrl.includes('/minha-conta/downloads/') || // Se estiver na página de downloads, não fazer transição
                     currentUrl.includes('/my-account/downloads/') || // Se estiver na página de downloads (inglês)
                     href.startsWith('mailto:') || 
@@ -729,6 +730,11 @@
 
                     // Se for âncora na mesma página, não fazer transição
                     if (href.startsWith('#')) {
+                        return;
+                    }
+                    
+                    // Se for link para seção venda (#venda), não fazer transição
+                    if (href === '/#venda' || href.endsWith('#venda')) {
                         return;
                     }
 
