@@ -316,7 +316,7 @@
     }
     
     .typewriter-text.finished::after {
-        display: none;
+        display: none;ormos 
     }
     
     /* Estilo para o nome dentro da frase */
@@ -398,7 +398,7 @@
         justify-content: center;
         opacity: 0;
         visibility: hidden;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease; /* Transição mais rápida */
     }
 
     .page-transition.active {
@@ -707,6 +707,9 @@
                     href.startsWith('http') && !href.includes(window.location.hostname) ||
                     link.closest('.border-t.border-slate-700') || // Excluir área de copyright
                     link.classList.contains('no-transition') || // Classe para excluir manualmente
+                    href.includes('/downloads/') || // Excluir downloads
+                    href.includes('minha-conta/downloads') || // Excluir área de downloads
+                    href.includes('my-account/downloads') || // Excluir downloads em inglês
                     href.startsWith('mailto:') || 
                     href.startsWith('tel:')) {
                     return;
@@ -725,10 +728,10 @@
                     // Mostrar animação de transição
                     showPageTransition();
 
-                    // Navegar após a animação
+                    // Navegar após a animação (mais rápido)
                     setTimeout(() => {
                         window.location.href = href;
-                    }, 800); // Duração da animação
+                    }, 400); // Duração reduzida para 400ms
                 });
             });
         }
@@ -737,7 +740,7 @@
         window.addEventListener('load', function() {
             setTimeout(() => {
                 hidePageTransition();
-            }, 500);
+            }, 200); // Reduzido para 200ms
         });
 
         // Mostrar transição quando sair da página (back/forward)
@@ -796,12 +799,13 @@
         // Detectar se é mobile para ajustar performance
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
-            // Reduzir animações em mobile
+            // Reduzir animações em mobile e acelerar transições
             const style = document.createElement('style');
             style.textContent = `
-                .atom-orbit, .atom-orbit-2 { animation-duration: 3s !important; }
-                .bubble-reaction { animation-duration: 4s !important; }
-                .word-wave { animation-duration: 3s !important; }
+                .page-transition { transition: all 0.15s ease !important; }
+                .atom-orbit, .atom-orbit-2 { animation-duration: 2s !important; }
+                .bubble-reaction { animation-duration: 2.5s !important; }
+                .word-wave { animation-duration: 1.5s !important; }
             `;
             document.head.appendChild(style);
         }
