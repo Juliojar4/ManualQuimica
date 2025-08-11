@@ -679,8 +679,14 @@
         // SISTEMA DE TRANSIÇÃO DE PÁGINAS QUÍMICAS
         // ==========================================
 
+        // Verificar se estamos na página de downloads
+        const isDownloadPage = window.location.href.includes('/minha-conta/downloads/') || 
+                              window.location.href.includes('/my-account/downloads/');
+
         // Função para mostrar transição
         function showPageTransition() {
+            // Não mostrar transição se estiver na página de downloads
+            if (isDownloadPage) return;
             pageTransition.classList.add('active');
         }
 
@@ -695,6 +701,7 @@
 
             links.forEach(link => {
                 const href = link.getAttribute('href');
+                const currentUrl = window.location.href;
                 
                 // Pular links externos, que abrem em nova aba, downloads ou redes sociais
                 if (link.target === '_blank' || 
@@ -710,6 +717,8 @@
                     href.includes('/downloads/') || // Excluir downloads
                     href.includes('minha-conta/downloads') || // Excluir área de downloads
                     href.includes('my-account/downloads') || // Excluir downloads em inglês
+                    currentUrl.includes('/minha-conta/downloads/') || // Se estiver na página de downloads, não fazer transição
+                    currentUrl.includes('/my-account/downloads/') || // Se estiver na página de downloads (inglês)
                     href.startsWith('mailto:') || 
                     href.startsWith('tel:')) {
                     return;
