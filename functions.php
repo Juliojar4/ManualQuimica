@@ -422,6 +422,95 @@ function disable_quantity_changes() {
 |--------------------------------------------------------------------------
 */
 
+/*
+|--------------------------------------------------------------------------
+| Bloquear Acesso às Páginas de Produto Individual
+|--------------------------------------------------------------------------
+*/
+
+// Redirecionar usuários que tentam acessar single product
+add_action('template_redirect', 'block_single_product_access');
+
+function block_single_product_access() {
+    // Verifica se é uma página de produto individual
+    if (is_product()) {
+        // Pega a URL de referência (página anterior)
+        $referer = wp_get_referer();
+        
+        // Se existe referência e é uma página válida do nosso site
+        if ($referer && strpos($referer, home_url()) !== false) {
+            // Redireciona de volta para a página anterior
+            wp_safe_redirect($referer);
+            exit;
+        } else {
+            // Se não há referência válida, redireciona para a home
+            wp_safe_redirect(home_url());
+            exit;
+        }
+    }
+}
+
+// Remover links para produtos individuais nos loops de produtos
+add_filter('woocommerce_loop_product_link', 'remove_product_links', 10, 2);
+
+function remove_product_links($link, $product) {
+    // Retorna # ao invés do link do produto
+    return '#';
+}
+
+// Adicionar JavaScript para prevenir cliques em links de produtos
+add_action('wp_footer', 'prevent_product_link_clicks');
+
+function prevent_product_link_clicks() {
+    if (is_shop() || is_product_category() || is_product_tag() || is_front_page()) {
+        ?>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Encontra todos os links para produtos
+            const productLinks = document.querySelectorAll('a[href*="/product/"], .woocommerce-loop-product__link');
+            
+            productLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    // Opcional: mostrar mensagem ou fazer alguma ação
+                    console.log('Acesso ao produto individual foi bloqueado');
+                    
+                    return false;
+                });
+                
+                // Remove o href para não mostrar preview no hover
+                link.removeAttribute('href');
+                link.style.cursor = 'default';
+            });
+        });
+        </script>
+        <?php
+    }
+}
+
+// Adicionar mensagem personalizada se alguém tentar acessar via URL direta
+add_action('wp_head', 'add_product_access_notice');
+
+function add_product_access_notice() {
+    if (is_product()) {
+        // Esta parte só executará se por algum motivo o redirect não funcionar
+        ?>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Se chegou até aqui, força redirecionamento via JavaScript
+            if (document.referrer && document.referrer.includes('<?php echo home_url(); ?>')) {
+                window.location.href = document.referrer;
+            } else {
+                window.location.href = '<?php echo home_url(); ?>';
+            }
+        });
+        </script>
+        <?php
+    }
+}
+
 // Adicionar mensagem personalizada no topo da página order-received
 add_action('woocommerce_before_thankyou', 'add_download_message_after_checkout', 5, 1);
 

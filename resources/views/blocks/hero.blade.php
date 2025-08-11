@@ -107,16 +107,7 @@
                             </div>
                         </a>
 
-                        {{-- Botão secundário --}}
-                        <a href="#preview"
-                            class="group inline-flex items-center gap-2 text-white/80 hover:text-white font-medium py-4 px-6 rounded-xl border border-white/20 hover:border-white/40 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
-                            <svg class="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h6"></path>
-                            </svg>
-                            <span>Ver Prévia</span>
-                        </a>
+ 
                     </div>
                 @endif
 
