@@ -81,7 +81,7 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-B68egyfB.css",
+    "file": "assets/app-XDcnkiBz.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -96,13 +96,13 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-P0Dxh7W1.js",
+    "file": "assets/app-CfE9BXb6.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
       "assets/app-D7wrQ6zr.css",
-      "assets/app-B68egyfB.css"
+      "assets/app-XDcnkiBz.css"
     ]
   },
   "resources/js/blocks.js": {

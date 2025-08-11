@@ -58,7 +58,7 @@ body {
 }
 
 .desktop-nav-menu li a:hover,
-.desktop-nav-menu li.current-menu-item a {
+.desktop-nav-menu li:first-child.current-menu-item a {
     color: #5eead4; /* teal-300 */
     background-color: rgba(20, 184, 166, 0.1);
 }
@@ -202,7 +202,7 @@ body {
 }
 
 .mobile-nav-menu li a:hover,
-.mobile-nav-menu li.current-menu-item a {
+.mobile-nav-menu li:first-child.current-menu-item a {
     color: #5eead4;
     background-color: rgba(20, 184, 166, 0.1);
     transform: translateX(8px);
@@ -222,7 +222,7 @@ body {
 }
 
 .mobile-nav-menu li a:hover::before,
-.mobile-nav-menu li.current-menu-item a::before {
+.mobile-nav-menu li:first-child.current-menu-item a::before {
     transform: scaleY(1);
 }
 
