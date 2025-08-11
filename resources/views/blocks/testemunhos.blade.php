@@ -277,8 +277,7 @@
                     const testimonialsSlider = new Splide(slider, options);
                     testimonialsSlider.mount();
 
-                    console.log('Testemunhos slider mounted successfully');
-                } catch (error) {
+                 } catch (error) {
                     console.error('Error initializing testemunhos slider:', error);
                 }
             }

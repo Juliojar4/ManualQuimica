@@ -13,4 +13,4 @@ import '../css/editor.css';
 import './blocks';
 
 // Your custom JavaScript code for editor here
-console.log('🎨 Editor loaded - Admin');
+ 

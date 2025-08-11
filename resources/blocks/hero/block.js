@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     titleText = 'Hero Title';
   }
   
-  console.log('Title text:', titleText);
-  
+   
  
   
   // Dividir texto em palavras

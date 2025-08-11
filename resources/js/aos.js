@@ -9,5 +9,4 @@ document.addEventListener('DOMContentLoaded', function() {
         mirror: false,
         anchorPlacement: 'top-bottom'
     });
-    console.log('🎨 AOS initialized!');
-});
+ });

@@ -19,5 +19,4 @@ import './aos';
 import './mobile-menu';
 
 // Your custom JavaScript code here
-console.log('🎨 App loaded - Frontend');
-
+ 

@@ -196,4 +196,4 @@ if (typeof window !== 'undefined') {
     
 })();
 
-console.log('🔧 Underscore.js compatibility layer loaded');
+ 

@@ -36,8 +36,7 @@ registerBlockType('doctailwind/grid-information', {
         const blockProps = useBlockProps();
         
         // Debug
-        console.log('Cards atuais:', cards);
-
+ 
         const updateCard = (index, field, value) => {
             const updatedCards = [...cards];
             updatedCards[index] = { ...updatedCards[index], [field]: value };
@@ -73,29 +72,25 @@ registerBlockType('doctailwind/grid-information', {
         };
 
         const onSelectImage = (index, media) => {
-            console.log('Selecionando imagem:', { index, media });
-            const updatedCards = [...cards];
+             const updatedCards = [...cards];
             updatedCards[index] = { 
                 ...updatedCards[index], 
                 imageId: media.id,
                 imageUrl: media.url,
                 imageAlt: media.alt || ''
             };
-            console.log('Cards atualizados:', updatedCards);
-            setAttributes({ cards: updatedCards });
+             setAttributes({ cards: updatedCards });
         };
 
         const onRemoveImage = (index) => {
-            console.log('Removendo imagem do index:', index);
-            const updatedCards = [...cards];
+             const updatedCards = [...cards];
             updatedCards[index] = { 
                 ...updatedCards[index], 
                 imageId: 0,
                 imageUrl: '',
                 imageAlt: ''
             };
-            console.log('Cards após remoção:', updatedCards);
-            setAttributes({ cards: updatedCards });
+             setAttributes({ cards: updatedCards });
         };
 
         return (

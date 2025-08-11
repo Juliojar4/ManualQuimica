@@ -29,11 +29,6 @@
           "color": "oklch(70.4% .191 22.216)"
         },
         {
-          "name": "Red (500)",
-          "slug": "red-500",
-          "color": "oklch(63.7% .237 25.331)"
-        },
-        {
           "name": "Red (600)",
           "slug": "red-600",
           "color": "oklch(57.7% .245 27.325)"

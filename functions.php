@@ -65,6 +65,84 @@ collect(['setup', 'filters'])
 |--------------------------------------------------------------------------
 */
 
+// Remover restrições de força de senha do WooCommerce
+add_action('wp_print_scripts', 'remove_woocommerce_password_strength', 100);
+
+function remove_woocommerce_password_strength() {
+    if (wp_script_is('woocommerce', 'enqueued')) {
+        wp_dequeue_script('woocommerce');
+    }
+    if (wp_script_is('wc-password-strength-meter', 'enqueued')) {
+        wp_dequeue_script('wc-password-strength-meter');
+    }
+}
+
+// Desabilitar medidor de força de senha
+add_action('wp_print_scripts', 'disable_woocommerce_password_meter');
+
+function disable_woocommerce_password_meter() {
+    wp_add_inline_script('jquery', '
+        jQuery(document).ready(function($) {
+            // Remove validação de força de senha
+            $("body").on("keyup", "input[name=password], input[name=account_password]", function() {
+                $(this).removeClass("short bad good strong");
+                $(this).next(".woocommerce-password-hint").remove();
+                $(".woocommerce-password-strength").remove();
+            });
+            
+            // Remove hints de senha
+            $(".woocommerce-password-hint").remove();
+            $(".woocommerce-password-strength").remove();
+        });
+    ');
+}
+
+// Permitir senhas fracas programaticamente
+add_filter('woocommerce_min_password_strength', '__return_zero');
+
+// Remover validação de senha no backend
+add_action('woocommerce_save_account_details_errors', 'remove_password_validation', 10, 2);
+
+function remove_password_validation($errors, $user) {
+    // Remove erros relacionados à força de senha
+    $error_codes = $errors->get_error_codes();
+    
+    foreach ($error_codes as $code) {
+        if (strpos($code, 'password') !== false) {
+            $errors->remove($code);
+        }
+    }
+}
+
+// CSS para esconder elementos de força de senha
+add_action('wp_head', 'hide_password_strength_elements');
+
+function hide_password_strength_elements() {
+    if (is_account_page() || is_checkout()) {
+        ?>
+        <style>
+        .woocommerce-password-strength,
+        .woocommerce-password-hint,
+        .woocommerce form .form-row .password-input,
+        .woocommerce .woocommerce-password-strength,
+        .woocommerce .woocommerce-password-hint {
+            display: none !important;
+        }
+        
+        /* Estilos para campos de senha */
+        .woocommerce input[type="password"] {
+            border: 1px solid #ddd !important;
+        }
+        
+        .woocommerce input[type="password"]:focus {
+            border-color: #14B8A6 !important;
+            box-shadow: 0 0 0 1px #14B8A6 !important;
+        }
+        </style>
+        <?php
+    }
+}
+
 // Redirecionar para o carrinho após registro bem-sucedido
 add_filter('woocommerce_registration_redirect', 'redirect_to_cart_after_registration');
 

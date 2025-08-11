@@ -37,16 +37,13 @@ function initAccordionTabs() {
                 
                 const isCurrentlyOpen = targetContent && targetContent.style.maxHeight && targetContent.style.maxHeight !== '0px';
                 
-                console.log(`📊 Currently open: ${isCurrentlyOpen}`);
-                
+                 
                 if (isCurrentlyOpen) {
                     // Fechar item atual
-                    console.log('📁 Closing current item');
-                    closeAccordionItem(targetContent, icon);
+                     closeAccordionItem(targetContent, icon);
                 } else {
                     // Fechar todos os outros itens
-                    console.log('📂 Opening item and closing others');
-                    contents.forEach((content, contentIndex) => {
+                     contents.forEach((content, contentIndex) => {
                         if (contentIndex !== index) {
                             const otherIcon = headers[contentIndex].querySelector('.accordion-icon');
                             closeAccordionItem(content, otherIcon);
@@ -64,8 +61,7 @@ function initAccordionTabs() {
         
         // Inicializar primeiro item como aberto
         if (headers.length > 0) {
-            console.log('🚀 Initializing first item as open');
-            const firstContent = contents[0];
+             const firstContent = contents[0];
             const firstIcon = headers[0].querySelector('.accordion-icon');
             
             openAccordionItem(firstContent, firstIcon);
@@ -76,8 +72,7 @@ function initAccordionTabs() {
 
 function openAccordionItem(content, icon) {
     if (!content) {
-        console.log('❌ No content element to open');
-        return;
+         return;
     }
     
     content.style.maxHeight = '24rem'; // 384px = 96 * 4
@@ -88,13 +83,11 @@ function openAccordionItem(content, icon) {
         icon.style.transform = 'rotate(180deg)';
     }
     
-    console.log('📂 Opened accordion item');
-}
+ }
 
 function closeAccordionItem(content, icon) {
     if (!content) {
-        console.log('❌ No content element to close');
-        return;
+         return;
     }
     
     content.style.maxHeight = '0px';
@@ -105,7 +98,7 @@ function closeAccordionItem(content, icon) {
         icon.style.transform = 'rotate(0deg)';
     }
     
-    console.log('📁 Closed accordion item');
+ 
 }
 
 function switchToImage(index, allImages, indicator) {

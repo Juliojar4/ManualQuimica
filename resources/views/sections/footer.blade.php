@@ -27,38 +27,15 @@
                 </p>
 
                 <div class="flex space-x-4">
-                    <a href="#"
+                    <a target="_blank" href="https://www.instagram.com/anaclarafarmaco/"
                         class="w-10 h-10 bg-slate-700 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group">
                         <svg class="w-5 h-5 text-gray-300 group-hover:text-white group-hover:rotate-12 transition-all duration-500"
                             fill="currentColor" viewBox="0 0 24 24">
                             <path
-                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                         </svg>
                     </a>
-                    <a href="#"
-                        class="w-10 h-10 bg-slate-700 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group">
-                        <svg class="w-5 h-5 text-gray-300 group-hover:text-white group-hover:rotate-12 transition-all duration-500"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-                        </svg>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 bg-slate-700 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group">
-                        <svg class="w-5 h-5 text-gray-300 group-hover:text-white group-hover:rotate-12 transition-all duration-500"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.747 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001.012.001z" />
-                        </svg>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 bg-slate-700 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-all duration-500 hover:scale-110 hover:-translate-y-1 hover:shadow-lg group">
-                        <svg class="w-5 h-5 text-gray-300 group-hover:text-white group-hover:rotate-12 transition-all duration-500"
-                            fill="currentColor" viewBox="0 0 24 24">
-                            <path
-                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                        </svg>
-                    </a>
+
                 </div>
             </div>
 
@@ -166,6 +143,7 @@
                             </path>
                         </svg>
                         (15) 98834-8260
+                        
                     </div>
                 </div>
             </div>
@@ -173,22 +151,21 @@
     </div>
 
     {{-- Seção Bottom/Copyright --}}
-    <div class="border-t border-slate-700">
+    <div class="border-t relative z-50 border-slate-700">
         <div class="container mx-auto px-6 py-6">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <div class="text-gray-400 text-sm">
                     © {{ date('Y') }} Manual de Química. Todos os direitos reservados.
                 </div>
-
-
-                <div class="flex items-center text-gray-400 text-sm">
-                    <span class="mr-2">Feito com</span>
-                    <svg class="w-4 h-4 text-red-500 mx-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="ml-2">para educação</span>
+                
+                {{-- Assinatura especial do desenvolvedor --}}
+                <div class="signature-container">
+                    <div class="signature-line flex items-center space-x-2 text-sm">
+                        <span class="signature-icon">💻</span>
+                        <span class="typewriter-text" id="full-signature">
+                            <span id="typed-text"></span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,7 +193,8 @@
                 </div>
                 <div class="reaction-arrow">
                     <svg viewBox="0 0 100 20">
-                        <path d="M10 10 L80 10 M75 5 L80 10 L75 15" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M10 10 L80 10 M75 5 L80 10 L75 15" stroke="currentColor" stroke-width="2"
+                            fill="none" />
                     </svg>
                 </div>
                 <div class="molecule molecule-2">
@@ -225,7 +203,7 @@
                     <div class="atom atom-orbit-2"></div>
                 </div>
             </div>
-            
+
             {{-- Bolhas de Reação --}}
             <div class="reaction-bubbles">
                 <div class="bubble-reaction bubble-1"></div>
@@ -235,7 +213,7 @@
                 <div class="bubble-reaction bubble-5"></div>
                 <div class="bubble-reaction bubble-6"></div>
             </div>
-            
+
             {{-- Texto de Loading --}}
             <div class="loading-text">
                 <span class="loading-word">Preparando</span>
@@ -248,171 +226,415 @@
 
 {{-- Estilos CSS para Transição --}}
 <style>
-/* Page Transition Overlay */
-.page-transition {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.page-transition.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.transition-container {
-    text-align: center;
-    color: white;
-}
-
-/* Chemical Reaction Animation */
-.chemical-reaction {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-
-.molecule {
-    position: relative;
-    width: 80px;
-    height: 80px;
-}
-
-.atom {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), rgba(20, 184, 166, 0.8));
-}
-
-.atom-center {
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(45deg, #14B8A6, #0891B2);
-}
-
-.atom-orbit {
-    width: 8px;
-    height: 8px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(45deg, #06B6D4, #3B82F6);
-    animation: orbit-1 2s linear infinite;
-}
-
-.atom-orbit-2 {
-    width: 6px;
-    height: 6px;
-    bottom: 10px;
-    right: 10px;
-    background: linear-gradient(45deg, #8B5CF6, #EC4899);
-    animation: orbit-2 1.5s linear infinite;
-}
-
-@keyframes orbit-1 {
-    0% { transform: translateX(-50%) rotate(0deg) translateX(30px) rotate(0deg); }
-    100% { transform: translateX(-50%) rotate(360deg) translateX(30px) rotate(-360deg); }
-}
-
-@keyframes orbit-2 {
-    0% { transform: rotate(0deg) translateX(25px) rotate(0deg); }
-    100% { transform: rotate(-360deg) translateX(25px) rotate(360deg); }
-}
-
-.reaction-arrow {
-    width: 60px;
-    height: 20px;
-    color: #14B8A6;
-    animation: pulse-arrow 1s ease-in-out infinite;
-}
-
-@keyframes pulse-arrow {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.1); opacity: 0.7; }
-}
-
-/* Reaction Bubbles */
-.reaction-bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.bubble-reaction {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(20, 184, 166, 0.6), rgba(20, 184, 166, 0.1));
-    animation: bubble-float-reaction 3s infinite ease-in-out;
-}
-
-.bubble-1 { width: 12px; height: 12px; top: 20%; left: 10%; animation-delay: 0s; }
-.bubble-2 { width: 8px; height: 8px; top: 60%; left: 20%; animation-delay: 0.5s; }
-.bubble-3 { width: 16px; height: 16px; top: 30%; right: 15%; animation-delay: 1s; }
-.bubble-4 { width: 6px; height: 6px; bottom: 40%; left: 30%; animation-delay: 1.5s; }
-.bubble-5 { width: 10px; height: 10px; bottom: 20%; right: 25%; animation-delay: 2s; }
-.bubble-6 { width: 14px; height: 14px; top: 70%; right: 40%; animation-delay: 2.5s; }
-
-@keyframes bubble-float-reaction {
-    0% { transform: translateY(0px) scale(0); opacity: 0; }
-    50% { opacity: 1; }
-    100% { transform: translateY(-200px) scale(1); opacity: 0; }
-}
-
-/* Loading Text Animation */
-.loading-text {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #14B8A6;
-}
-
-.loading-word {
-    display: inline-block;
-    margin: 0 0.2rem;
-    animation: word-wave 2s ease-in-out infinite;
-}
-
-.loading-word:nth-child(1) { animation-delay: 0s; }
-.loading-word:nth-child(2) { animation-delay: 0.3s; }
-.loading-word:nth-child(3) { animation-delay: 0.6s; }
-
-@keyframes word-wave {
-    0%, 60%, 100% { transform: translateY(0); }
-    30% { transform: translateY(-10px); }
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .chemical-reaction {
-        gap: 1.5rem;
-        transform: scale(0.8);
+    /* Assinatura especial do desenvolvedor */
+    .signature-container {
+        position: relative;
     }
     
-    .reaction-arrow {
-        width: 40px;
+    .signature-line {
+        position: relative;
+        padding: 8px 16px;
+        border-radius: 25px;
+        background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(59, 130, 246, 0.1));
+        border: 1px solid rgba(20, 184, 166, 0.2);
+        transition: all 0.3s ease;
     }
     
-    .loading-text {
+    .signature-line:hover {
+        background: linear-gradient(135deg, rgba(20, 184, 166, 0.15), rgba(59, 130, 246, 0.15));
+        border-color: rgba(20, 184, 166, 0.4);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+    }
+    
+    .signature-icon {
+        font-size: 16px;
+        animation: pulse-icon 2s ease-in-out infinite;
+    }
+    
+    .signature-heart {
+        color: #ef4444;
+        font-size: 14px;
+        animation: heartbeat 1.5s ease-in-out infinite;
+    }
+    
+    .signature-name {
+        color: #14b8a6 !important;
+        font-weight: 600;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .signature-name:hover {
+        color: #06d6a2 !important;
+        text-shadow: 0 0 8px rgba(20, 184, 166, 0.6);
+    }
+    
+    .signature-name::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #14b8a6, #3b82f6);
+        transition: width 0.3s ease;
+        border-radius: 1px;
+    }
+    
+    .signature-name:hover::after {
+        width: 100%;
+    }
+    
+    /* Animação Typewriter para a frase completa */
+    .typewriter-text {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #9ca3af;
+    }
+    
+    .typewriter-text::after {
+        content: '|';
+        position: absolute;
+        right: -2px;
+        top: 0;
+        color: #14b8a6;
+        animation: blink 1s infinite;
+        font-weight: normal;
+    }
+    
+    @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+    }
+    
+    @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    .typewriter-text.finished::after {
+        display: none;
+    }
+    
+    /* Estilo para o nome dentro da frase */
+    .signature-name-highlight {
+        color: white !important;
+        font-weight: 600;
         font-size: 1rem;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.3s ease;
     }
-}
+    
+    .signature-name-highlight:hover {
+        color: #06d6a2 !important;
+        text-shadow: 0 0 8px rgba(20, 184, 166, 0.6);
+    }
+    
+    .signature-text {
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+    
+    .signature-line:hover .signature-text {
+        color: #9ca3af;
+    }
+    
+    /* Animações */
+    @keyframes pulse-icon {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+    
+    @keyframes heartbeat {
+        0%, 100% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.1);
+        }
+        50% {
+            transform: scale(1);
+        }
+        75% {
+            transform: scale(1.05);
+        }
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .signature-line {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+        
+        .signature-icon {
+            font-size: 14px;
+        }
+        
+        .signature-heart {
+            font-size: 12px;
+        }
+    }
+
+    /* Page Transition Overlay */
+    .page-transition {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .page-transition.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .transition-container {
+        text-align: center;
+        color: white;
+    }
+
+    /* Chemical Reaction Animation */
+    .chemical-reaction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .molecule {
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+
+    .atom {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(20, 184, 166, 0.8));
+    }
+
+    .atom-center {
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(45deg, #14B8A6, #0891B2);
+    }
+
+    .atom-orbit {
+        width: 8px;
+        height: 8px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(45deg, #06B6D4, #3B82F6);
+        animation: orbit-1 2s linear infinite;
+    }
+
+    .atom-orbit-2 {
+        width: 6px;
+        height: 6px;
+        bottom: 10px;
+        right: 10px;
+        background: linear-gradient(45deg, #8B5CF6, #EC4899);
+        animation: orbit-2 1.5s linear infinite;
+    }
+
+    @keyframes orbit-1 {
+        0% {
+            transform: translateX(-50%) rotate(0deg) translateX(30px) rotate(0deg);
+        }
+
+        100% {
+            transform: translateX(-50%) rotate(360deg) translateX(30px) rotate(-360deg);
+        }
+    }
+
+    @keyframes orbit-2 {
+        0% {
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(-360deg) translateX(25px) rotate(360deg);
+        }
+    }
+
+    .reaction-arrow {
+        width: 60px;
+        height: 20px;
+        color: #14B8A6;
+        animation: pulse-arrow 1s ease-in-out infinite;
+    }
+
+    @keyframes pulse-arrow {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+    }
+
+    /* Reaction Bubbles */
+    .reaction-bubbles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .bubble-reaction {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, rgba(20, 184, 166, 0.6), rgba(20, 184, 166, 0.1));
+        animation: bubble-float-reaction 3s infinite ease-in-out;
+    }
+
+    .bubble-1 {
+        width: 12px;
+        height: 12px;
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .bubble-2 {
+        width: 8px;
+        height: 8px;
+        top: 60%;
+        left: 20%;
+        animation-delay: 0.5s;
+    }
+
+    .bubble-3 {
+        width: 16px;
+        height: 16px;
+        top: 30%;
+        right: 15%;
+        animation-delay: 1s;
+    }
+
+    .bubble-4 {
+        width: 6px;
+        height: 6px;
+        bottom: 40%;
+        left: 30%;
+        animation-delay: 1.5s;
+    }
+
+    .bubble-5 {
+        width: 10px;
+        height: 10px;
+        bottom: 20%;
+        right: 25%;
+        animation-delay: 2s;
+    }
+
+    .bubble-6 {
+        width: 14px;
+        height: 14px;
+        top: 70%;
+        right: 40%;
+        animation-delay: 2.5s;
+    }
+
+    @keyframes bubble-float-reaction {
+        0% {
+            transform: translateY(0px) scale(0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-200px) scale(1);
+            opacity: 0;
+        }
+    }
+
+    /* Loading Text Animation */
+    .loading-text {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #14B8A6;
+    }
+
+    .loading-word {
+        display: inline-block;
+        margin: 0 0.2rem;
+        animation: word-wave 2s ease-in-out infinite;
+    }
+
+    .loading-word:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .loading-word:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    .loading-word:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    @keyframes word-wave {
+
+        0%,
+        60%,
+        100% {
+            transform: translateY(0);
+        }
+
+        30% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .chemical-reaction {
+            gap: 1.5rem;
+            transform: scale(0.8);
+        }
+
+        .reaction-arrow {
+            width: 40px;
+        }
+
+        .loading-text {
+            font-size: 1rem;
+        }
+    }
 </style>
 
 {{-- JavaScript para o botão "Voltar ao Topo" e Transições de Página --}}
@@ -470,26 +692,39 @@
         // Interceptar todos os links internos
         function setupPageTransitions() {
             const links = document.querySelectorAll('a[href^="/"], a[href^="' + window.location.origin + '"], a[href^="#"]');
-            
+
             links.forEach(link => {
-                // Pular links que abrem em nova aba ou são downloads
-                if (link.target === '_blank' || link.hasAttribute('download')) {
+                const href = link.getAttribute('href');
+                
+                // Pular links externos, que abrem em nova aba, downloads ou redes sociais
+                if (link.target === '_blank' || 
+                    link.hasAttribute('download') || 
+                    href.includes('linkedin.com') || 
+                    href.includes('instagram.com') ||
+                    href.includes('facebook.com') ||
+                    href.includes('twitter.com') ||
+                    href.includes('youtube.com') ||
+                    href.startsWith('http') && !href.includes(window.location.hostname) ||
+                    link.closest('.border-t.border-slate-700') || // Excluir área de copyright
+                    link.classList.contains('no-transition') || // Classe para excluir manualmente
+                    href.startsWith('mailto:') || 
+                    href.startsWith('tel:')) {
                     return;
                 }
 
                 link.addEventListener('click', function(e) {
                     const href = this.getAttribute('href');
-                    
+
                     // Se for âncora na mesma página, não fazer transição
                     if (href.startsWith('#')) {
                         return;
                     }
 
                     e.preventDefault();
-                    
+
                     // Mostrar animação de transição
                     showPageTransition();
-                    
+
                     // Navegar após a animação
                     setTimeout(() => {
                         window.location.href = href;
@@ -539,13 +774,13 @@
                 form.addEventListener('submit', function(e) {
                     // Mostrar transição apenas se for redirecionamento
                     if (!this.querySelector('input[name="add-to-cart"]')) return;
-                    
+
                     showPageTransition();
                     setTimeout(() => {
                         // Deixar o WooCommerce processar normalmente
                         form.submit();
                     }, 600);
-                    
+
                     e.preventDefault();
                 });
             });
@@ -573,12 +808,12 @@
 
         // Debug mode (remover em produção)
         if (window.location.search.includes('debug=transitions')) {
-            console.log('🧪 Page Transitions Debug Mode Ativo');
-            
+
             // Adicionar botão de teste
             const debugBtn = document.createElement('button');
             debugBtn.textContent = 'Testar Transição';
-            debugBtn.style.cssText = 'position:fixed;top:10px;right:10px;z-index:10000;padding:10px;background:#14B8A6;color:white;border:none;border-radius:5px;cursor:pointer;';
+            debugBtn.style.cssText =
+                'position:fixed;top:10px;right:10px;z-index:10000;padding:10px;background:#14B8A6;color:white;border:none;border-radius:5px;cursor:pointer;';
             debugBtn.onclick = () => {
                 showPageTransition();
                 setTimeout(() => hidePageTransition(), 2000);
@@ -588,9 +823,138 @@
     });
 
     // ==========================================
-    // PRELOADER INICIAL (se necessário)
+    // ANIMAÇÃO TYPEWRITER PARA A FRASE COMPLETA
     // ==========================================
     
+    // Variável para controlar se a animação já foi executada
+    let typewriterExecuted = false;
+    
+    // Animação Typewriter para a frase completa
+    function typewriterAnimation() {
+        const textElement = document.getElementById('typed-text');
+        if (!textElement || typewriterExecuted) return;
+        
+        typewriterExecuted = true; // Marcar como executada
+        console.log('Iniciando animação typewriter da frase completa'); // Debug
+        
+        const fullText = 'Desenvolvido e criado por ';
+        const nameText = 'Julio Jara';
+        const linkedinUrl = 'https://www.linkedin.com/in/julio-cesar-ravacci-jara-734368224/';
+        
+        let currentIndex = 0;
+        
+        // Limpar conteúdo anterior
+        textElement.innerHTML = '';
+        
+        function typeNextLetter() {
+            if (currentIndex < fullText.length) {
+                // Adicionar letra da frase principal
+                textElement.innerHTML += fullText[currentIndex];
+                currentIndex++;
+                setTimeout(typeNextLetter, 80); // Velocidade da digitação
+            } else {
+                // Iniciar digitação do nome com link
+                typeNameWithLink();
+            }
+        }
+        
+        function typeNameWithLink() {
+            let nameIndex = 0;
+            
+            // Adicionar abertura do link
+            textElement.innerHTML += `<a href="${linkedinUrl}" target="_blank" class="no-transition signature-name-highlight">`;
+            
+            function typeNameLetter() {
+                if (nameIndex < nameText.length) {
+                    // Adicionar letra do nome dentro do link
+                    const linkElement = textElement.querySelector('a');
+                    linkElement.textContent += nameText[nameIndex];
+                    nameIndex++;
+                    setTimeout(typeNameLetter, 80);
+                } else {
+                    // Fechar o link e finalizar
+                    setTimeout(() => {
+                        const parent = textElement.parentElement;
+                        if (parent) {
+                            parent.classList.add('finished');
+                        }
+                    }, 1000);
+                }
+            }
+            
+            setTimeout(typeNameLetter, 200); // Pequena pausa antes do nome
+        }
+        
+        // Inicia a animação após um pequeno delay
+        setTimeout(typeNextLetter, 300);
+    }
+    
+    // Observador de interseção para detectar quando o footer está visível
+    function setupTypewriterObserver() {
+        const signatureContainer = document.querySelector('.signature-container');
+        const textElement = document.getElementById('typed-text');
+        
+        if (!signatureContainer || !textElement) {
+            console.log('Elementos não encontrados para animação typewriter'); // Debug
+            return;
+        }
+        
+        console.log('Configurando observer para typewriter'); // Debug
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                console.log('Observer disparado:', entry.isIntersecting, entry.intersectionRatio); // Debug
+                if (entry.isIntersecting && !typewriterExecuted) {
+                    console.log('Footer visível, executando animação'); // Debug
+                    // Footer está visível, executar animação
+                    typewriterAnimation();
+                    // Desconectar o observer após executar uma vez
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1, // Reduzir threshold para 10%
+            rootMargin: '0px 0px -50px 0px' // Reduzir margem
+        });
+        
+        observer.observe(signatureContainer);
+        
+        // Fallback: Se não disparar em 10 segundos, executar a animação
+        setTimeout(() => {
+            if (!typewriterExecuted) {
+                console.log('Fallback: executando animação por timeout'); // Debug
+                typewriterAnimation();
+            }
+        }, 10000);
+    }
+    
+    // Configurar o observer quando a página carrega
+    window.addEventListener('load', setupTypewriterObserver);
+    
+    // Também configurar quando o DOM estiver pronto (backup)
+    document.addEventListener('DOMContentLoaded', setupTypewriterObserver);
+    
+    // Debug: Verificar elementos após um tempo
+    setTimeout(() => {
+        const signatureContainer = document.querySelector('.signature-container');
+        const textElement = document.getElementById('typed-text');
+        console.log('Debug elements:', {
+            signatureContainer: !!signatureContainer,
+            textElement: !!textElement,
+            typewriterExecuted: typewriterExecuted
+        });
+        
+        // Se os elementos existem mas a animação não executou, force a execução
+        if (signatureContainer && textElement && !typewriterExecuted) {
+            console.log('Forçando execução da animação');
+            typewriterAnimation();
+        }
+    }, 3000);
+
+    // ==========================================
+    // PRELOADER INICIAL (se necessário)
+    // ==========================================
+
     // Mostrar transição durante carregamento inicial
     if (document.readyState === 'loading') {
         document.getElementById('page-transition')?.classList.add('active');

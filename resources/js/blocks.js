@@ -25,4 +25,4 @@ import '../blocks/f-a-q/block.jsx';
 import '../blocks/custom-tabs/block.jsx';
 import '../blocks/scroll-component/block.jsx';
 
-console.log('🎨 Auto Blocks - System loaded!');
+ 

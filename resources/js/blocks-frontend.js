@@ -11,8 +11,7 @@
 // Import accordion tabs functionality
 import './accordion-tabs';
 
-console.log('🎨 Block Frontend Scripts - Loaded!');
-
+ 
 // Scripts de frontend para blocos específicos
 // Hero block - Animações das bolhas já estão no CSS
 // Grid Information - Estático, não necessita JS
@@ -55,11 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Initialize Splide
                 const splide = new Splide(slider, options);
                 
-                // Add custom event listeners
-                splide.on('mounted', function() {
-                    console.log('Testemunhos slider mounted successfully');
-                });
-
+             
                 splide.on('moved', function() {
                     // Add slight animation delay to prevent jarring effects
                     const slides = slider.querySelectorAll('.splide__slide');
