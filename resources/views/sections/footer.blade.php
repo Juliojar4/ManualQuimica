@@ -323,7 +323,7 @@
     .signature-name-highlight {
         color: white !important;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1rem;  
         text-decoration: none;
         position: relative;
         transition: all 0.3s ease;

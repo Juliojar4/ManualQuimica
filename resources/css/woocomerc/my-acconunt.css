@@ -44,6 +44,10 @@
 
 }
 
+.wc-block-components-quantity-selector {
+    display: none !important;
+}
+
 .woocommerce-orders-table__row {
     margin-bottom: 40px;
 }

@@ -218,3 +218,237 @@ function add_cart_redirect_script() {
         <?php
     }
 }
+
+/*
+|--------------------------------------------------------------------------
+| Limite de Quantidade no Carrinho
+|--------------------------------------------------------------------------
+*/
+
+// Limitar quantidade máxima de cada produto para 1 unidade
+add_filter('woocommerce_quantity_input_args', 'force_single_product_quantity_limit', 10, 2);
+
+function force_single_product_quantity_limit($args, $product) {
+    // Define quantidade máxima como 1
+    $args['max_value'] = 1;
+    
+    // Se já houver o produto no carrinho, define valor como 1
+    if (is_admin() || !WC()->cart) {
+        return $args;
+    }
+    
+    // Verifica se o produto já está no carrinho
+    $cart_contents = WC()->cart->get_cart_contents();
+    foreach ($cart_contents as $cart_item) {
+        if ($cart_item['product_id'] == $product->get_id()) {
+            $args['input_value'] = 1;
+            $args['min_value'] = 1;
+            $args['max_value'] = 1;
+            break;
+        }
+    }
+    
+    return $args;
+}
+
+// Prevenir adição de mais de 1 unidade do mesmo produto
+add_filter('woocommerce_add_cart_item_data', 'prevent_duplicate_products_in_cart', 10, 3);
+
+function prevent_duplicate_products_in_cart($cart_item_data, $product_id, $variation_id) {
+    // Verifica se o produto já está no carrinho
+    $cart = WC()->cart->get_cart();
+    
+    foreach ($cart as $cart_item_key => $cart_item) {
+        if ($cart_item['product_id'] == $product_id) {
+            // Se o produto já existe, remove o anterior e adiciona o novo
+            WC()->cart->remove_cart_item($cart_item_key);
+            
+            // Adiciona mensagem informativa
+            wc_add_notice(
+                sprintf(
+                    __('Produto "%s" já estava no carrinho. Quantidade atualizada para 1 unidade.', 'sage'),
+                    get_the_title($product_id)
+                ),
+                'notice'
+            );
+            
+            break;
+        }
+    }
+    
+    return $cart_item_data;
+}
+
+// Forçar quantidade para 1 quando produto é adicionado ao carrinho
+add_filter('woocommerce_add_to_cart_quantity', 'force_cart_item_quantity_to_one', 10, 2);
+
+function force_cart_item_quantity_to_one($quantity, $product_id) {
+    // Sempre retorna 1 como quantidade
+    return 1;
+}
+
+// Atualizar carrinho para manter apenas 1 de cada produto
+add_action('woocommerce_before_calculate_totals', 'force_single_quantity_in_cart');
+
+function force_single_quantity_in_cart($cart) {
+    if (is_admin() && !defined('DOING_AJAX')) {
+        return;
+    }
+
+    // Evita loops infinitos
+    if (did_action('woocommerce_before_calculate_totals') >= 2) {
+        return;
+    }
+
+    // Percorre todos os itens do carrinho
+    foreach ($cart->get_cart() as $cart_item_key => $cart_item) {
+        // Se a quantidade for maior que 1, força para 1
+        if ($cart_item['quantity'] > 1) {
+            $cart->set_quantity($cart_item_key, 1);
+            
+            // Adiciona mensagem apenas uma vez
+            if (!wc_has_notice('Quantidade máxima de 1 unidade por produto.', 'notice')) {
+                wc_add_notice(
+                    __('Quantidade máxima de 1 unidade por produto.', 'sage'),
+                    'notice'
+                );
+            }
+        }
+    }
+}
+
+// Remover botões de aumentar quantidade na página do carrinho
+add_action('wp_head', 'hide_cart_quantity_buttons');
+
+function hide_cart_quantity_buttons() {
+    if (is_cart()) {
+        ?>
+        <style>
+        .woocommerce .quantity .plus,
+        .woocommerce .quantity .minus {
+            display: none !important;
+        }
+        
+        .woocommerce .quantity input.qty {
+            text-align: center !important;
+            width: 60px !important;
+            background-color: #f8f9fa !important;
+            border: 2px solid #14B8A6 !important;
+            color: #14B8A6 !important;
+            font-weight: bold !important;
+            border-radius: 5px !important;
+        }
+        
+        .woocommerce .quantity input.qty:focus {
+            outline: none !important;
+            border-color: #0891B2 !important;
+            box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.2) !important;
+        }
+        
+        /* Adicionar ícone ou texto explicativo */
+        .woocommerce .quantity::after {
+            content: "Máx: 1";
+            font-size: 10px;
+            color: #6b7280;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        </style>
+        <?php
+    }
+}
+
+// Validar quantidade antes de adicionar ao carrinho
+add_filter('woocommerce_add_to_cart_validation', 'validate_single_product_quantity', 10, 5);
+
+function validate_single_product_quantity($passed, $product_id, $quantity, $variation_id = '', $variations = '') {
+    // Se tentativa de adicionar mais de 1, força para 1
+    if ($quantity > 1) {
+        $_POST['quantity'] = 1;
+        
+        wc_add_notice(
+            __('Você pode adicionar apenas 1 unidade de cada produto ao carrinho.', 'sage'),
+            'notice'
+        );
+    }
+    
+    return $passed;
+}
+
+// Adicionar JavaScript para desabilitar alteração de quantidade
+add_action('wp_footer', 'disable_quantity_changes');
+
+function disable_quantity_changes() {
+    if (is_cart() || is_product()) {
+        ?>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Desabilita alteração de quantidade nos campos
+            const quantityInputs = document.querySelectorAll('input.qty, input[name*="quantity"]');
+            
+            quantityInputs.forEach(function(input) {
+                input.setAttribute('readonly', 'readonly');
+                input.setAttribute('min', '1');
+                input.setAttribute('max', '1');
+                input.value = '1';
+                
+                // Previne alteração via teclado
+                input.addEventListener('keydown', function(e) {
+                    e.preventDefault();
+                    return false;
+                });
+                
+                // Sempre mantém valor como 1
+                input.addEventListener('change', function() {
+                    this.value = '1';
+                });
+            });
+            
+            // Remove botões de mais/menos se existirem
+            const plusButtons = document.querySelectorAll('.quantity .plus, .plus');
+            const minusButtons = document.querySelectorAll('.quantity .minus, .minus');
+            
+            plusButtons.forEach(btn => btn.style.display = 'none');
+            minusButtons.forEach(btn => btn.style.display = 'none');
+        });
+        </script>
+        <?php
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Mensagem de Download na Confirmação de Pedido
+|--------------------------------------------------------------------------
+*/
+
+// Adicionar mensagem personalizada no topo da página order-received
+add_action('woocommerce_before_thankyou', 'add_download_message_after_checkout', 5, 1);
+
+function add_download_message_after_checkout($order_id) {
+    if (!$order_id) return;
+    
+    $order = wc_get_order($order_id);
+    if (!$order) return;
+    
+    ?>
+    <div class="woocommerce-order-download-simple" style="
+        background: linear-gradient(135deg, #14B8A6, #0891B2);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 0.95rem;
+        box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+    ">
+        📚 <strong>Após a confirmação do pagamento</strong>, seus materiais estarão disponíveis em 
+        <a href="<?php echo esc_url(wc_get_account_endpoint_url('downloads')); ?>" 
+           style="color: white; text-decoration: underline; font-weight: bold;"
+           onmouseover="this.style.color='#f0f9ff'"
+           onmouseout="this.style.color='white'">
+            Meus Downloads
+        </a>
+    </div>
+    <?php
+}
